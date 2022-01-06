@@ -21,12 +21,12 @@ const Infomation = () => {
     }
   ];
   return (
-    <div className="bg-black py-56 text-center">
-      <div className="container grid grid-cols-3 gap-40 mx-auto">
+    <div className="bg-black p-24 md:py-56 text-center">
+      <div className="container md:grid grid-cols-3 gap-40 mx-auto">
         {data.map((element, index) => (
-          <div key={index} className="text-white">
+          <div key={index} className="text-white py-8">
             <Image layout="responsive" objectFit="contain" src={element.image} alt="" width="100%" height="50%" />
-            <div className="text-3xl mb-2 font-bold ">{element.title}</div>
+            <div className="text-3xl my-2 font-bold ">{element.title}</div>
             <div className="text-xl">{element.description}</div>
           </div>
         ))}
