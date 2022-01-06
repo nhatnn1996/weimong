@@ -19,6 +19,17 @@ const HowToPlay = () => {
           alt=""
         />
       </div>
+      <div className="mt-8 md:mt-20">
+        <Image
+          className="rounded-xl"
+          layout="responsive"
+          objectFit="contain"
+          src="/images/roadmap.png"
+          width="100%"
+          height="50%"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
