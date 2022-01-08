@@ -2,12 +2,12 @@ import mockup from './mockup';
 
 const Roadmap = () => {
   return (
-    <div className="bg-black pb-20 md:pb-48 container mx-auto">
-      <div className="text-5xl text-center font-bold">ROADMAP</div>
-      <div className="grid grid-cols-1 ms:grid-cols-2 md:grid-cols-6 mt-20 px-10 md:px-40 ">
+    <div className="bg-black px-10 xl:px-40 container mx-auto border-neutral-800 border-x-[1px]">
+      <div className="text-5xl text-center font-bold py-20">ROADMAP</div>
+      <div className="grid grid-cols-1 ms:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 ">
         {mockup.map((element, index) => (
-          <div key={index}>
-            <div className={`flex items-center mb-6 mt-6 md:mt-0  ${element.isActive ? '' : 'opacity-[0.3]'}`}>
+          <div key={index} className='mb-12'>
+            <div className={`flex items-center mb-6 lg:mt-0  ${element.isActive ? '' : 'opacity-[0.3]'}`}>
               <div>
                 <div className="w-5 h-5 rounded-full bg-white" />
               </div>

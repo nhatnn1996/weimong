@@ -6,6 +6,7 @@ import Infomation from '@/components/homepage/infomation';
 import GamePlayScreenShot from '@/components/homepage/screen-shot';
 import HowToPlay from '@/components/homepage/how-to-play';
 import Roadmap from '@/components/homepage/roadmap';
+import Footer from '@/components/homepage/footer';
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <GamePlayScreenShot />
         <HowToPlay />
         <Roadmap />
+        <Footer />
       </main>
     </div>
   );

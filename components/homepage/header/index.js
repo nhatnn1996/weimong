@@ -43,7 +43,7 @@ const Header = () => {
         </ul> */}
       </nav>
       <div className="banner">
-        <video src="/videos/header.mp4" className="w-full" muted autoPlay={'autoplay'} preLoad="auto" loop>
+        <video src="/videos/header.mp4" className="w-full" muted autoPlay={'autoplay'} preload="auto" loop>
           something
         </video>
       </div>
