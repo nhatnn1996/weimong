@@ -1,12 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import Header from '@/components/homepage/header';
 import WhiteSpaer from '@/components/homepage/white-paper';
 import Blog from '@/components/homepage/blog';
 import Infomation from '@/components/homepage/infomation';
 import GamePlayScreenShot from '@/components/homepage/screen-shot';
 import HowToPlay from '@/components/homepage/how-to-play';
+import Roadmap from '@/components/homepage/roadmap';
 
 export default function Home() {
   return (
@@ -23,6 +22,7 @@ export default function Home() {
         <Infomation />
         <GamePlayScreenShot />
         <HowToPlay />
+        <Roadmap />
       </main>
     </div>
   );

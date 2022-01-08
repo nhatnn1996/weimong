@@ -27,7 +27,7 @@ const Blog = () => {
         {data.map((element, index) => (
           <div key={index} className="text-white py-8">
             <Image layout="responsive" objectFit="contain" src={element.image} alt="" width="100%" height="60%" />
-            <div className="text-3xl my-12 font-bold ">{element.title}</div>
+            <div className="text-3xl my-6 md:my-12 font-bold ">{element.title}</div>
             <div className="text-xl">{element.description}</div>
             <Link href="#" passHref>
               <a className="inline-block bg-blue-700 hover:bg-blue-500 transition py-4 px-8 mt-8 rounded-full">

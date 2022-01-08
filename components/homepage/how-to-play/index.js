@@ -8,28 +8,6 @@ const HowToPlay = () => {
         <span className="text-red-600">attempt to hold your spaceship together and survive</span> , but be careful. Two
         or more random players among the crew are infected persons bent on killing everyone!
       </div>
-      <div className="mt-8 md:mt-20">
-        <Image
-          className="rounded-xl"
-          layout="responsive"
-          objectFit="cover"
-          src="/images/how-to-play.png"
-          width="100%"
-          height="67%"
-          alt=""
-        />
-      </div>
-      <div className="mt-8 md:mt-20">
-        <Image
-          className="rounded-xl"
-          layout="responsive"
-          objectFit="contain"
-          src="/images/roadmap.png"
-          width="100%"
-          height="50%"
-          alt=""
-        />
-      </div>
     </div>
   );
 };
