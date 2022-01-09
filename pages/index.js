@@ -17,7 +17,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="bg-black text-white">
+      <main className="bg-black text-white relative z-10">
+        <div className="banner">
+          <video src="/videos/header.mp4" className="w-full" muted autoPlay={'autoplay'} preload="auto" loop>
+            something
+          </video>
+        </div>
         <WhiteSpaer />
         <Blog />
         <Infomation />

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { useState } from 'react';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { AiOutlineClose } from 'react-icons/ai';
+import { VscChromeClose } from 'react-icons/vsc';
 import Link from 'next/link';
 
 const Header = () => {
@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header bg-black text-white">
+    <header className="header bg-black text-white sticky top-0 left-0 z-50">
       <nav className="py-8 px-6 justify-center text-xl hidden md:flex">
         <ul className="flex-1 flex justify-end gap-24 items-center">
           <li className="text-2xl">
@@ -47,7 +47,7 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <nav className="py-1 px-6 bg-black sticky top-0 left-0 justify-between text-xl flex md:hidden items-center">
+      <nav className="py-1 px-6 bg-black  justify-between text-xl flex md:hidden items-center z-50">
         <div className="w-24">
           <Image
             src="/images/logo.svg"
@@ -59,16 +59,16 @@ const Header = () => {
           />
         </div>
         <div>
-          {isShow && <AiOutlineClose onClick={toggle} />}
+          {isShow && <VscChromeClose onClick={toggle} />}
           {!isShow && <GiHamburgerMenu onClick={toggle} />}
         </div>
 
         <div
-          className={`fixed top-[49px] left-0 w-full h-screen bg backdrop-blur-xl overflow-hidden transition ease-in-out ${
+          className={`fixed top-[49px]  left-0 w-full h-screen bg backdrop-blur-xl overflow-hidden transition ease-in-out z-50 ${
             isShow ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="py-4 px-6 flex flex-col items-center text-black">
+          <div className="py-4 px-6 flex flex-col items-center text-white">
             {menuMobile.map((element, index) => (
               <Link href={element.href} key={index} passHref>
                 <a href="" className="mt-4">
@@ -81,11 +81,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-      <div className="banner">
-        <video src="/videos/header.mp4" className="w-full" muted autoPlay={'autoplay'} preload="auto" loop>
-          something
-        </video>
-      </div>
     </header>
   );
 };

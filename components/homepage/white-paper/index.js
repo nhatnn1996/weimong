@@ -7,7 +7,7 @@ const WhitePaper = () => {
           teamwork and betrayal.
         </div>
         <div className="text-xl text-center mt-16">
-          Crewmates work together to complete tasks before one or <br /> more Impostors can kill everyone aboard.
+          Crewmates work together to complete tasks before one or <br className="hidden xl:block" /> more Impostors can kill everyone aboard.
         </div>
 
         <div className="text-center">
