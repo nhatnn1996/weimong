@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const GamePlayScreenShot = () => {
   return (
-    <div className="bg-black p-4 container mx-auto">
+    <div className="bg-black px-6 py-4 container mx-auto">
       <div className="text-5xl text-center font-bold">GAME PLAY SCREENSHOTS</div>
       <div className="text-center md:grid grid-cols-3 mt-20 gap-12">
         <div className="mb-8 md:mb-0">

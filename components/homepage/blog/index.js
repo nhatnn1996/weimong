@@ -23,7 +23,7 @@ const Blog = () => {
   ];
   return (
     <div className="bg-black py-4">
-      <div className="container md:grid px-6 md:px-0 grid-cols-3 gap-12 mx-auto">
+      <div className="container md:grid px-6 lg:px-4 xl:px-0 grid-cols-3 gap-12 mx-auto">
         {data.map((element, index) => (
           <div key={index} className="text-white py-8">
             <Image layout="responsive" objectFit="contain" src={element.image} alt="" width="100%" height="60%" />

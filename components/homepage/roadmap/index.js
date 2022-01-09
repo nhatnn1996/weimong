@@ -2,7 +2,7 @@ import mockup from './mockup';
 
 const Roadmap = () => {
   return (
-    <div className="bg-black px-10 xl:px-40 container mx-auto border-neutral-800 border-x-[1px]">
+    <div className="bg-black px-6 xl:px-40 container mx-auto border-neutral-800 border-x-[1px]">
       <div className="text-5xl text-center font-bold py-20">ROADMAP</div>
       <div className="grid grid-cols-1 ms:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 ">
         {mockup.map((element, index) => (
