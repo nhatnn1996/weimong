@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -25,4 +28,31 @@ a {
   body {
     font-size: 12px;
   }
+}
+
+@font-face {
+  font-family: mandalore3d;
+  src: url('/fonts/mandalore/mandalore3d.ttf');
+}
+
+@font-face {
+  font-family: mandalorecond;
+  src: url('/fonts/mandalore/mandalorecond.ttf');
+}
+
+@font-face {
+  font-family: mandaloretitle;
+  src: url('/fonts/mandalore/mandaloretitle.ttf');
+}
+
+.mandalore3d {
+  font-family: mandalore3d;
+}
+
+.mandalorecond {
+  font-family: mandalorecond;
+}
+
+.mandaloretitle {
+  font-family: mandaloretitle;
 }
