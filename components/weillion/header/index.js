@@ -42,7 +42,7 @@ const Header = () => {
   };
 
   return (
-    <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover	bg-right">
+    <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover bg-right">
       <div className="w-[100rem] mx-auto">
         <nav className=" py-20 flex items-center">
           <AiOutlineMenu className="w-[1.5rem] h-[1.7rem] stroke-2 cursor-pointer" />

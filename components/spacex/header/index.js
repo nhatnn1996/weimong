@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { useState } from 'react';
 import { AiOutlineMenu, AiOutlineTwitter } from 'react-icons/ai';
 import { BsChevronCompactRight } from 'react-icons/bs';
-import { FaDiscord } from 'react-icons/fa';
 import { FaTelegramPlane, FaRedditAlien, FaFacebookF } from 'react-icons/fa';
 
 import Link from 'next/link';
@@ -42,8 +41,8 @@ const Header = () => {
   };
 
   return (
-    <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover	bg-right">
-      <div className="w-[100rem] mx-auto">
+    <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover bg-right">
+      <div className="w-[90rem] mx-auto">
         <nav className=" py-20 flex items-center">
           <AiOutlineMenu className="w-[1.5rem] h-[1.7rem] stroke-2 cursor-pointer" />
           <div className="ml-10">
@@ -64,7 +63,7 @@ const Header = () => {
           </div>
         </nav>
       </div>
-      <div className="w-[100rem] mx-auto mt-auto mandaloretitle text-[#FFFFFF66]">
+      <div className="w-[90rem] mx-auto mt-auto mandaloretitle text-[#FFFFFF66]">
         <div className="whitespace-pre text-md">
           <div className="bold">First stage – S-IC</div>
           <div>Length 138.0 ft (42.1 m) </div>
@@ -76,7 +75,7 @@ const Header = () => {
           <div>Specific impulse 263 seconds (2.58 km/s) sea level</div>
         </div>
       </div>
-      <div className="mt-12 w-[100rem] mx-auto">
+      <div className="mt-12 w-[90rem] mx-auto">
         <button className="rounded-full px-8 py-3 border-[1px] mandaloretitle tracking-[1.8px] text-[14px] items-center flex">
           timeline
           <BsChevronCompactRight className="ml-2 w-2 h-2 stroke-2" />
@@ -85,7 +84,7 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="mt-16 mb-10 w-[100rem] mx-auto flex">
+      <div className="mt-16 mb-10 w-[90rem] mx-auto flex">
         <div className="border-[0.5px] border-[#FFFFFF33] rounded-lg w-80 p-5">
           <video src="/videos/w-x-header.mp4" className="w-full rounded-sm" controls></video>
         </div>

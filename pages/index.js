@@ -1,5 +1,10 @@
 import Head from 'next/head';
 import Header from '@/components/spacex/header';
+import WieSpace from '@/components/spacex/weispace';
+import Generation from '@/components/spacex/generation';
+import Weitech from '@/components/spacex/weitech';
+import WeiMong from '@/components/spacex/weimong';
+import RoadMap from '@/components/spacex/roadmap';
 
 export default function Home() {
   return (
@@ -11,7 +16,11 @@ export default function Home() {
       </Head>
       <Header />
       <main className="bg-black text-white relative z-10">
-        <div className="banner"></div>
+        <WieSpace />
+        <Generation />
+        <Weitech />
+        <WeiMong />
+        <RoadMap />
       </main>
     </div>
   );
