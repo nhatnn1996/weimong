@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { AiOutlineTwitter } from 'react-icons/ai';
 import { FaTelegramPlane, FaRedditAlien, FaFacebookF } from 'react-icons/fa';
-import { RiDiscordFill } from 'react-icons/Ri';
+import { RiDiscordFill } from 'react-icons/ri';
 
 const socials = [FaFacebookF, FaTelegramPlane, FaRedditAlien, AiOutlineTwitter, RiDiscordFill];
 
