@@ -6,6 +6,8 @@ import Weitech from '@/components/spacex/weitech';
 import WeiMong from '@/components/spacex/weimong';
 import RoadMap from '@/components/spacex/roadmap';
 import WeiTeam from '@/components/spacex/weiteam';
+import Partner from '@/components/spacex/partner';
+import Footer from '@/components/spacex/footer';
 
 export default function Home() {
   return (
@@ -23,9 +25,11 @@ export default function Home() {
         <WeiMong />
         <RoadMap />
         <div>
-          <video src="/videos/nasa.mp4" autoPlay={'autoplay'} preLoad="auto" muted className="w-full" loop></video>
+          <video src="/videos/nasa.mp4" autoPlay={'autoplay'} preload="auto" muted className="w-full" loop></video>
         </div>
         <WeiTeam />
+        <Partner />
+        <Footer />
       </main>
     </div>
   );

@@ -86,7 +86,7 @@ const Header = () => {
 
       <div className="mt-16 mb-10 w-[90rem] mx-auto flex">
         <div className="border-[0.5px] border-[#FFFFFF33] rounded-lg w-80 p-5">
-          <video src="/videos/w-x-header.mp4" className="w-full rounded-sm" controls></video>
+          <video src="/videos/w-x-header.mp4" className="w-full rounded-sm" muted autoPlay={'autoplay'} preload="auto" loop></video>
         </div>
         <div className=" flex mt-10 w-full flex-1">
           {infomation.map((item, index) => {

@@ -12,7 +12,7 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/images/spacex/roadmap.png')] bg-cover bg-no-repeat bg-top-left pb-64 relative bg-red-200">
+      <div className="bg-[url('/images/spacex/roadmap.png')] bg-cover bg-no-repeat bg-top-left pb-32 relative ">
         <div className="w-[90rem] mx-auto flex items-center justify-center flex-col">
           <div className="mandaloretitle text-4xl my-16">q4 - 2022</div>
           <div className="backdrop-blur-2xl rounded-lg bg-black/20 px-20 py-10 text-md">

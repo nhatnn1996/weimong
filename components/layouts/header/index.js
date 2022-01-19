@@ -24,7 +24,7 @@ const Header = () => {
         </ul>
       </nav>
       <div className="banner">
-        <video src="/videos/header.mp4" muted autoPlay={'autoplay'} preLoad="auto" loop>
+        <video src="/videos/header.mp4" muted autoPlay={'autoplay'} preload="auto" loop>
           something
         </video>
         {/* <video width="100%" height="100%" autoPlay controls loop>
