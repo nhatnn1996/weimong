@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { AiFillLeftCircle, AiFillRightCircle } from 'react-icons/ai';
+import Link from 'next/link';
 const WeiMong = () => {
   return (
     <div className="bg-[#242424] pt-16 pb-40 bg-[url('/images/spacex/weimong.png')] bg-cover bg-no-repeat bg-top-left">
@@ -14,7 +13,9 @@ const WeiMong = () => {
               </div>
               <div className="mt-4"> Weimong builds an ecosystem to help users entertain and earn more NFT.</div>
             </div>
-            <button className="rounded-full bg-[#FF6600] px-16 py-3 mandaloretitle text-2xl ml-20 mt-16">play now</button>
+            <Link passHref href="/weillion">
+              <button className="rounded-full bg-[#FF6600] px-16 py-3 mandaloretitle text-2xl ml-20 mt-16">Go to now</button>
+            </Link>
           </div>
         </div>
       </div>
