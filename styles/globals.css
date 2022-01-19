@@ -63,6 +63,9 @@ a {
 
 .mandaloretitle {
   font-family: mandaloretitle;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
 }
 
 .text-stroke {

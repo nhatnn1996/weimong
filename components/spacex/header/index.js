@@ -95,7 +95,7 @@ const Header = () => {
                 <div className="absolute w-2 h-2 translate-x-[-50%] translate-y-[-50%] rounded-full bg-white" />
                 <div className="mt-4 px-6">
                   <div className="text-[#FFFFFF66] mandaloretitle text-[12px] tracking-[2px]">{item.label}</div>
-                  <div className="tracking-[4px] font-bold text-[20px] mandalorecond">{item.value}</div>
+                  <div className="tracking-[1px] font-bold text-[20px] mandaloretitle">{item.value}</div>
                 </div>
               </div>
             );
