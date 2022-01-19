@@ -1,6 +1,6 @@
 const RoadMap = () => {
   return (
-    <div className="">
+    <div className="relative">
       <div className="bg-[url('/images/spacex/overlay-weimong.png')] bg-cover bg-no-repeat bg-top-left mt-[-10rem] pt-64">
         <div className="w-[90rem] mx-auto">
           <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-8xl tracking-[16px]">wei-roadmap</div>
@@ -12,7 +12,7 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[url('/images/spacex/roadmap.png')] bg-cover bg-no-repeat bg-top-left pb-64 relative">
+      <div className="bg-[url('/images/spacex/roadmap.png')] bg-cover bg-no-repeat bg-top-left pb-64 relative bg-red-200">
         <div className="w-[90rem] mx-auto flex items-center justify-center flex-col">
           <div className="mandaloretitle text-4xl my-16">q4 - 2022</div>
           <div className="backdrop-blur-2xl rounded-lg bg-black/20 px-20 py-10 text-md">
@@ -28,7 +28,8 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
-      <div className="absolute bottom-0 overlay-roadmap left-0 h-64 w-full bg-red z-10" />
+      <div className="h-10 bg-[#7a7a7a]"></div>
+      <div className="absolute bottom-0 overlay-roadmap left-0 h-64 w-full z-10" />
     </div>
   );
 };

@@ -25,7 +25,7 @@ const Generation = () => {
           <div className="mandalore3d text-6xl mt-6">cost</div>
           <div className="flex items-end mt-4">
             <div className="text-4xl mandaloretitle text-[#FF6D00]">10 Million</div>
-            <div className="text-1xl     ml-3 text-white/90 ">Weilion Tokens</div>
+            <div className="text-1xl mandaloretitle ml-3 text-white/90 ">Weilion Tokens</div>
           </div>
           <div className=" border-t-[0.5px] border-t-[#FF6D00] mt-4" />
           <div className=" border-t-[0.5px] border-t-[#FF6D00] mt-2" />
