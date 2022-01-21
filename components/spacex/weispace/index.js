@@ -43,8 +43,8 @@ const WieSpace = () => {
                 lauch location
               </div>
               <div className="text-xs mt-2">
-				<p>Kennedy Space Center Launch Complex 39,</p>
-				<p>Gagarin's Start, Baikonur Cosmodrome Site 81 on map BSC Weilion.</p>
+                <p>Kennedy Space Center Launch Complex 39,</p>
+                <p>{"Gagarin's Start, Baikonur Cosmodrome Site 81 on map BSC Weilion."}</p>
               </div>
             </div>
           </div>
