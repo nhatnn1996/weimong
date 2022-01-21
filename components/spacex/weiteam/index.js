@@ -19,7 +19,7 @@ const WeiTeam = () => {
       <div className="w-[90rem] mx-auto">
         <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-8xl tracking-[16px]">wei-team</div>
         <div className="border-b-[2px] border-[#7a7a7a] mt-24 flex mandalorecond text-xl "></div>
-        <div className="flex">
+        <div className="flex  ">
           <div className="w-4/12 flex items-center justify-center">
             <CEO data={teams[0]} />
           </div>
@@ -64,8 +64,8 @@ const CEO = ({ data }) => {
           />
         </div>
       </div>
-      <div className="text-2xl font-black tracking-widest text-center mt-6">
-        <span className="font-light mr-5">/</span> {data.name} <span className="font-light ml-5">/</span>
+      <div className="text-2xl font-black tracking-widest text-center mt-6 uppercase">
+        <span className="font-light mr-5 ">/</span> {data.name} <span className="font-light ml-5">/</span>
       </div>
       <div className="opacity-50 text-sm mt-10">{data.description}</div>
     </div>
@@ -88,8 +88,8 @@ const Team = ({ data }) => {
           />
         </div>
       </div>
-      <div className="text-md font-black tracking-widest text-center mt-3 whitespace-nowrap ">
-        <span className="font-light mr-2">/</span> {data.name} <span className="font-light ml-2">/</span>
+      <div className="text-md font-black tracking-widest text-center mt-3 whitespace-nowrap uppercase">
+        <span className="font-light mr-2 ">/</span> {data.name} <span className="font-light ml-2">/</span>
       </div>
       <div className="opacity-50 text-sm mt-3 whitespace-nowrap text-center">{data.description}</div>
     </div>
