@@ -51,8 +51,12 @@ const Generation = () => {
             <div className="p-20 text-md font-medium">
               <div className="mb-2">- Explore the endless universe and the most advanced technologies. </div>
               <div className="mb-2">
-                - Expanding matrix Mission - Create a space-cosmic matrix through an infinitely expanding blockchain platform{' '}
+                - Expanding matrix Mission{' '}
               </div>
+              <div className="mb-2">
+                - Create a space-cosmic matrix through an infinitely expanding blockchain platform{' '}
+              </div>
+
               <div className="mb-2">
                 - Simulate and test logical hypotheses from the WEILION energy source into space through the Blockchain ecosystem{' '}
               </div>

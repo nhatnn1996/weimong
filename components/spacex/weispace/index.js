@@ -4,7 +4,7 @@ import { BiTargetLock } from 'react-icons/bi';
 const items = [
   { label: 'total length of the truss', value: '108.4 m' },
   { label: 'WEIGHT (400 tons)', value: '~400.000 kg' },
-  { label: 'the pressurized volume', value: '~1000 m3' },
+	{ label: 'the pressurized volume', value: <>-1000 m<sup>3</sup></> },
   { label: 'Length of all modules', value: '74 m' }
 ];
 const WieSpace = () => {
@@ -43,8 +43,8 @@ const WieSpace = () => {
                 lauch location
               </div>
               <div className="text-xs mt-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, fuga! Unde perferendis dicta natus, delectus nesciunt aperiam
-                sapiente provident, culpa ad architecto quo maiores? Sunt culpa nulla ab est magnam.
+				<p>Kennedy Space Center Launch Complex 39,</p>
+				<p>Gagarin's Start, Baikonur Cosmodrome Site 81 on map BSC Weilion.</p>
               </div>
             </div>
           </div>
