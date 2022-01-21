@@ -1,5 +1,10 @@
 import Image from 'next/image';
 
+// const teams= [
+//   {name: "ADAM DO", description: "(Founder/CEO) ", image: ""}
+//   {name: "", description: "", image: ""}
+// ]
+
 const WeiTeam = () => {
   return (
     <div className="bg-[#242424] py-20">

@@ -1,10 +1,35 @@
 import Image from 'next/image';
-import { useState } from 'react';
-import { AiOutlineMenu, AiOutlineTwitter } from 'react-icons/ai';
+import { useEffect, useState } from 'react';
+import { AiOutlineTwitter } from 'react-icons/ai';
 import { BsChevronCompactRight } from 'react-icons/bs';
 import { FaTelegramPlane, FaRedditAlien, FaFacebookF } from 'react-icons/fa';
 
 import Link from 'next/link';
+
+const subAboutUs = ['team', 'whitepaper', 'roadmap'];
+const menu = [
+  {
+    label: 'about us',
+    href: '',
+    sub: subAboutUs
+  },
+  {
+    label: 'weispace',
+    href: '#'
+  },
+  {
+    label: 'orbit',
+    href: '#'
+  },
+  {
+    label: 'weimong',
+    href: '#'
+  },
+  {
+    label: 'market place',
+    href: '#'
+  }
+];
 
 const infomation = [
   {
@@ -44,17 +69,33 @@ const Header = () => {
     <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover bg-right">
       <div className="w-[90rem] mx-auto">
         <nav className=" py-20 flex items-center">
-          <AiOutlineMenu className="w-[1.5rem] h-[1.7rem] stroke-2 cursor-pointer" />
-          <div className="ml-10">
+          {/* <AiOutlineMenu className="w-[1.5rem] h-[1.7rem] stroke-2 cursor-pointer" /> */}
+
+          <div className="">
             <Link href={'/'} passHref>
-              <Image
-                className="cursor-pointer"
-                src="/images/spacex/logo.webp"
-                alt="logo image"
-                width={'164px'}
-                height={'42px'}
-              />
+              <Image className="cursor-pointer" src="/images/spacex/logo.webp" alt="logo image" width={'164px'} height={'42px'} />
             </Link>
+          </div>
+          <div className="ml-auto mandaloretitle flex gap-20 ">
+            {menu.map((item, index) => (
+              <div key={index} className="group cursor-pointer relative blink-text-menu">
+                <Link passHref href={item.href}>
+                  <div className="text-md item hover:opacity-70">{item.label}</div>
+                </Link>
+                {item.sub?.length > 0 && (
+                  <div className="hidden group-hover:block absolute top-[100%] left-0 p-4 bg-black/20 rounded">
+                    {item.sub.map((sub, index) => (
+                      <div className="text-white mb-2 last:mb-0 hover:opacity-70" key={index}>
+                        {sub}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+          <div className="ml-8">
+            <Music />
           </div>
           <div className="ml-auto">
             <button className="rounded-full px-6 py-2.5 border-[1px] mandaloretitle tracking-[1.8px] text-[14px] whitespace-nowrap">
@@ -105,7 +146,10 @@ const Header = () => {
           <div className="flex translate-y-[-50%]">
             {socials.map((Icon, index) => {
               return (
-                <div className="first:ml-0 ml-6 w-10 h-10 rounded-full border-[0.5px] border-[#FFFFFF33] flex items-center justify-center" key={index}>
+                <div
+                  className="first:ml-0 ml-6 w-10 h-10 rounded-full border-[0.5px] border-[#FFFFFF33] flex items-center justify-center"
+                  key={index}
+                >
                   <Icon className="w-5 h-5 " />
                 </div>
               );
@@ -118,3 +162,22 @@ const Header = () => {
 };
 
 export default Header;
+
+const Music = () => {
+  const [isMute, setMute] = useState(true);
+  const classActive = isMute ? '' : 'disabled';
+  return (
+    <div
+      className={`music-waves mobile ${classActive}`}
+      id="btn-music-mobile"
+      onClick={() => {
+        setMute((mute) => !mute);
+      }}
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  );
+};
