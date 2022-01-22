@@ -1,14 +1,42 @@
+import React, {useState} from 'react';
+
 const RoadMap = () => {
+
+  const [phase, setPhase] = useState(0);
+
+  const HIGHTLIGHT_CLASSES = "border-b-[3px] pb-4 border-white";
+  const NON_HIGHTLIGHT_CLASSES = "opacity-70"
+
   return (
     <div className="relative">
       <div className="bg-[url('/images/spacex/overlay-weimong.png')] bg-cover bg-no-repeat bg-top-left mt-[-10rem] pt-64">
         <div className="w-[90rem] mx-auto">
           <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-8xl tracking-[16px]">wei-roadmap</div>
           <div className="border-b-[3px] border-[#7a7a7a] mt-12 flex mandalorecond text-2xl tracking-[6px] ">
-            <div className="px-14 border-b-[3px] border-white pb-4 translate-y-[3px]">phase 1</div>
-            <div className="px-14 translate-y-[3px] opacity-70">phase 2</div>
-            <div className="px-14 translate-y-[3px] opacity-70">phase 3</div>
-            <div className="px-14 translate-y-[3px] opacity-70">phase 4</div>
+            <div 
+              className={"px-14 translate-y-[3px]" + ' ' + ((phase === 0) ? HIGHTLIGHT_CLASSES: NON_HIGHTLIGHT_CLASSES)}
+              onClick={() => {setPhase(0)}}
+            >
+              phase 1
+            </div>
+            <div 
+              className={"px-14 translate-y-[3px]" + ' ' + ((phase === 1) ? HIGHTLIGHT_CLASSES: NON_HIGHTLIGHT_CLASSES)}
+              onClick={() => {setPhase(1)}}
+            >
+              phase 2
+            </div>
+            <div 
+              className={"px-14 translate-y-[3px]" + ' ' + ((phase === 2) ? HIGHTLIGHT_CLASSES: NON_HIGHTLIGHT_CLASSES)}
+              onClick={() => {setPhase(2)}}
+            >
+              phase 3
+            </div>
+            <div 
+              className={"px-14 translate-y-[3px]" + ' ' + ((phase === 3) ? HIGHTLIGHT_CLASSES: NON_HIGHTLIGHT_CLASSES)}
+              onClick={() => {setPhase(3)}}
+            >
+              phase 4
+            </div>
           </div>
         </div>
       </div>
