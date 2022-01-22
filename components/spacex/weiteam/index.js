@@ -1,16 +1,16 @@
 import Image from 'next/image';
 
 const teams = [
-  { name: 'ADAM DO', description: '(Founder/CEO) ', image: '/images/spacex/team/adam.jpeg' },
-  { name: 'Chien Phan', description: '(COO)', image: '/images/spacex/team/chien.jpeg' },
-  { name: 'Stefano Tsai', description: '(Product Manager)', image: '/images/spacex/team/tsai2.png' },
-  { name: 'Manh Pham', description: '(Solution & Product)', image: '/images/spacex/team/manh.jpeg' },
-  { name: 'Kenvin Nguyen', description: '(CTO/Blockchain Developer)', image: '/images/spacex/team/anhkinh.png' },
-  { name: 'Hai Luong', description: '(Game Developer)', image: '/images/spacex/team/hai.jpeg' },
-  { name: 'Huong NV', description: '(Artist)', image: '/images/spacex/team/anhhuong.png' },
-  { name: 'Sam', description: '(Designer)', image: '/images/spacex/team/sam.jpeg' },
-  { name: 'Cuong Nguyen', description: '(Animator)', image: '/images/spacex/team/cuong.png' },
-  { name: 'Nhat Nguyen', description: '(Frontend Developer)', image: '/images/spacex/team/nhat.png' }
+  { name: 'ADAM DO', position: '(Founder/CEO) ', descirption: 'Pilot commander', image: '/images/spacex/team/adam.jpeg' },
+  { name: 'Chien Phan', position: '(COO, Co-Founder)', descirption: 'Ground commander of space crafts',  image: '/images/spacex/team/chien.jpeg' },
+  { name: 'Manh Pham', position: '(AI, Solution & Product)', descirption: 'Flight engineer', image: '/images/spacex/team/manh.jpeg' },
+  { name: 'Kenvin Nguyen', position: '(CTO/Blockchain Developer)', descirption: 'Flight engineer, Load commander', image: '/images/spacex/team/anhkinh.png' },
+  { name: 'Stefano Tsai', position: '(Product Manager)', descirption: 'Module Pilot, Commander Spece object specialist', image: '/images/spacex/team/tsai2.png' },
+  { name: 'Cuong Nguyen', position: '(Animator)', descirption: 'Module Pilot, Mission specialist', image: '/images/spacex/team/cuong.png' },  
+  { name: 'Nhat Ngoc', position: '(Frontend Developer)', descirption: 'Module Pilot', image: '/images/spacex/team/nhat.png' },
+  { name: 'Huong Ngo', position: '(Artist)', descirption: 'Mission Specialist', image: '/images/spacex/team/anhhuong.png' },
+  { name: 'Hai Luong', position: '(Game Developer)', descirption: 'Flight engineer', image: '/images/spacex/team/hai.jpeg' },
+  { name: 'Sam', position: '(Designer)', descirption: 'Science Pilot', image: '/images/spacex/team/sam.jpeg' },
 ];
 
 const WeiTeam = () => {
@@ -67,7 +67,9 @@ const CEO = ({ data }) => {
       <div className="text-2xl font-black tracking-widest text-center mt-6 uppercase">
         <span className="font-light mr-5 ">/</span> {data.name} <span className="font-light ml-5">/</span>
       </div>
-      <div className="opacity-50 text-sm mt-10">{data.description}</div>
+      <div className="opacity-50 text-sm mt-3 text-center">
+        {data.position} - {data.descirption}
+      </div>
     </div>
   );
 };
@@ -91,7 +93,14 @@ const Team = ({ data }) => {
       <div className="text-md font-black tracking-widest text-center mt-3 whitespace-nowrap uppercase">
         <span className="font-light mr-2 ">/</span> {data.name} <span className="font-light ml-2">/</span>
       </div>
-      <div className="opacity-50 text-sm mt-3 whitespace-nowrap text-center">{data.description}</div>
+      <div className="opacity-50 text-sm mt-3 whitespace-nowrap text-center">{data.position}</div>
+      <div 
+        className="opacity-50 text-sm mt-3 text-center w-[14rem]"
+        //Why can't use module.css????
+        style={{margin: "0 auto"}}
+      >
+        {data.descirption}
+      </div>
     </div>
   );
 };
