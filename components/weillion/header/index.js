@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <header className="header bg-black text-white sticky top-0 left-0 z-50">
-      <nav className="py-8 px-6 justify-center text-xl hidden md:flex">
+      <nav className="py-8 px-4justify-center text-xl hidden md:flex">
         <ul className="flex-1 flex justify-end gap-24 items-center">
           <li className="text-2xl">
             <a href="#">Weimong Miner</a>
@@ -43,11 +43,11 @@ const Header = () => {
             <a href="#">Markeplace</a>
           </li>
           <li className="text-2xl">
-            <button className="rounded-full shadow-md px-6 py-1 bg-blue-500 text-white">Login</button>
+            <button className="rounded-full shadow-md px-4py-1 bg-blue-500 text-white">Login</button>
           </li>
         </ul>
       </nav>
-      <nav className="py-1 px-6 bg-black  justify-between text-xl flex md:hidden items-center z-50">
+      <nav className="py-1 px-4bg-black  justify-between text-xl flex md:hidden items-center z-50">
         <div className="w-24">
           <Image
             src="/images/logo.svg"
@@ -68,7 +68,7 @@ const Header = () => {
             isShow ? 'translate-x-0' : 'translate-x-full'
           }`}
         >
-          <div className="py-4 px-6 flex flex-col items-center text-white">
+          <div className="py-4 px-4flex flex-col items-center text-white">
             {menuMobile.map((element, index) => (
               <Link href={element.href} key={index} passHref>
                 <a href="" className="mt-4">
@@ -76,8 +76,8 @@ const Header = () => {
                 </a>
               </Link>
             ))}
-            <button className="rounded-full shadow-md px-6 py-1 bg-blue-500 text-white mt-6">Login</button>
-            <button className="rounded-full shadow-md px-6 py-1 bg-blue-500 text-white mt-6">Register</button>
+            <button className="rounded-full shadow-md px-4py-1 bg-blue-500 text-white mt-6">Login</button>
+            <button className="rounded-full shadow-md px-4py-1 bg-blue-500 text-white mt-6">Register</button>
           </div>
         </div>
       </nav>

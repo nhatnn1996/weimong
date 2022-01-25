@@ -3,13 +3,19 @@ const Generation = () => {
   return (
     <div className="py-10 bg-[#242424]">
       <div className="relative mandaloretitle">
-        <div className="absolute text-center top-0 left-0 text-[150px] tracking-[24px] opacity-40 w-full">generation</div>
-        <div className="absolute text-center top-0 left-0 text-[150px] tracking-[10px] opacity-30 w-full translate-x-[20px]">generation</div>
-        <div className="text-[150px] tracking-[10px] text-center text-[#F5F5F5]">generation</div>
+        <div className="absolute text-center top-0 left-0 text-[4rem] lg:text-[150px] tracking-[3px] lg:tracking-[24px] opacity-10 lg:opacity-40 w-full">
+          generation
+        </div>
+        <div className="absolute text-center top-0 left-0 text-[4rem] lg:text-[150px] tracking-[2px] lg:tracking-[10px] opacity-10 w-full lg:opacity-30 translate-x-[20px]">
+          generation
+        </div>
+        <div className="text-[4rem] lg:text-[150px] tracking-[1px] lg:tracking-[10px] text-center text-[#F5F5F5]">generation</div>
       </div>
+
+      <div className="mandalore3d text-7xl text-[#858585] text-center block lg:hidden">upto</div>
       <div className="flex mt-4">
         <div className="w-1/3 flex justify-end">
-          <div className="mandalore3d text-7xl text-[#858585]">upto</div>
+          <div className="mandalore3d text-7xl text-[#858585] hidden lg:block">upto</div>
           <div className="relative mandalorecond text-[#FF6D00] leading-[250px] mx-10">
             <div className="absolute top-0 left-[-30px] text-[350px] opacity-30">1</div>
             <div className="absolute top-0 left-[-25px] text-[350px] opacity-40">1</div>
@@ -31,9 +37,9 @@ const Generation = () => {
           <div className=" border-t-[0.5px] border-t-[#FF6D00] mt-2" />
         </div>
       </div>
-      <div className="relative my-24">
+      <div className="relative my-24 px-6">
         <div className="border-t-[0.5px] border-t-[#797979] absolute top-[50%] left-0 w-full" />
-        <div className="relative z-10 w-[90rem] mx-auto mandaloretitle flex justify-between ">
+        <div className="relative z-10 w-[90rem] mx-auto mandaloretitle lg:flex justify-between ">
           {title.map((element, index) => (
             <div key={index} className="bg-[#242424] px-2">
               {element}
@@ -41,21 +47,17 @@ const Generation = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center">
-        <div className="w-8/12">
+      <div className="flex justify-center px-6">
+        <div className="lg:w-8/12">
           <div className="tamtam mt-0" style={{ '--bottom-right': '40px', '--weight': '3px' }}>
-            <div className="border-b-[3px] border-[#7a7a7a] px-10 pt-8 flex justify-center mandalorecond text-4xl ">
-              <div className="px-20 border-b-[2px] border-white pb-6 translate-y-[2px]">purpose</div>
-              <div className="px-20 border-b-[2px] border-[#FFFFFF66] pb-6 text-[#FFFFFF66] translate-y-[2px]">advantages</div>
+            <div className="border-b-[3px] border-[#7a7a7a] lg:px-10 flex justify-center mandalorecond px-4 text-2xl lg:text-4xl ">
+              <div className="px-20 border-b-[2px] border-white py-3 lg:py-6 translate-y-[2px]">purpose</div>
+              <div className="px-20 border-b-[2px] border-[#FFFFFF66] py-3 lg:py-6 text-[#FFFFFF66] translate-y-[2px]">advantages</div>
             </div>
-            <div className="p-20 text-md font-medium">
+            <div className="p-10 lg:p-20 text-md font-medium">
               <div className="mb-2">- Explore the endless universe and the most advanced technologies. </div>
-              <div className="mb-2">
-                - Expanding matrix Mission{' '}
-              </div>
-              <div className="mb-2">
-                - Create a space-cosmic matrix through an infinitely expanding blockchain platform{' '}
-              </div>
+              <div className="mb-2">- Expanding matrix Mission </div>
+              <div className="mb-2">- Create a space-cosmic matrix through an infinitely expanding blockchain platform </div>
 
               <div className="mb-2">
                 - Simulate and test logical hypotheses from the WEILION energy source into space through the Blockchain ecosystem{' '}

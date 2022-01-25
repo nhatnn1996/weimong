@@ -7,16 +7,16 @@ const socials = [FaFacebookF, FaTelegramPlane, FaRedditAlien, AiOutlineTwitter, 
 
 const Footer = () => {
   return (
-    <div className="bg-[#242424] py-16">
-      <div className="w-[90rem] mx-auto flex">
-        <div className="w-2/12">
+    <div className="bg-[#242424] py-16 relative">
+      <div className="lg:w-[90rem] mx-auto flex">
+        <div className="w-1/2 lg:w-2/12 mx-auto">
           <Image src="/images/spacex/logo-big.png" width="100%" height={'25.6%'} layout="responsive" alt="big logo" />
         </div>
-        <div className="w-10/12 flex justify-end items-center">
+        <div className="w-10/12 flex justify-center lg:justify-end items-center absolute bottom-[100%] left-[50%] lg:relative translate-y-[-100%] translate-x-[-50%]">
           {socials.map((Icon, index) => {
             return (
-              <div className="first:ml-0 ml-6 w-16 h-16 rounded-full border-[0.5px] border-[#FFFFFF33] flex items-center justify-center" key={index}>
-                <Icon className="w-7 h-7 " />
+              <div className="first:ml-0 ml-4 lg:ml-6 w-10 h-10 lg:w-16 lg:h-16 rounded-full border-[0.5px] border-[#FFFFFF33] flex items-center justify-center" key={index}>
+                <Icon className="w-5 h-5 lg:w-7 lg:h-7 " />
               </div>
             );
           })}

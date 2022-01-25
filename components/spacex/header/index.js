@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
-import { AiOutlineTwitter } from 'react-icons/ai';
+import { AiOutlineTwitter, AiOutlineMenu } from 'react-icons/ai';
 import { BsChevronCompactRight } from 'react-icons/bs';
 import { FaTelegramPlane, FaRedditAlien, FaFacebookF } from 'react-icons/fa';
 
@@ -68,15 +68,14 @@ const Header = () => {
   return (
     <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover bg-right">
       <div className="w-[90rem] mx-auto">
-        <nav className=" py-20 flex items-center">
-          {/* <AiOutlineMenu className="w-[1.5rem] h-[1.7rem] stroke-2 cursor-pointer" /> */}
-
-          <div className="">
+        <nav className="py-5 lg:py-20 flex items-center px-4max-w-[100vw]">
+          <AiOutlineMenu className="w-[1.7rem] h-[1.9rem] stroke-2 cursor-pointer" />
+          <div className="hidden lg:block">
             <Link href={'/'} passHref>
               <Image className="cursor-pointer" src="/images/spacex/logo.webp" alt="logo image" width={'164px'} height={'42px'} />
             </Link>
           </div>
-          <div className="ml-auto mandaloretitle flex gap-20 ">
+          <div className="ml-auto mandaloretitle lg:flex gap-20 hidden">
             {menu.map((item, index) => (
               <div key={index} className="group cursor-pointer relative blink-text-menu">
                 <Link passHref href={item.href}>
@@ -94,11 +93,11 @@ const Header = () => {
               </div>
             ))}
           </div>
-          <div className="ml-8">
-            <Music />
-          </div>
+          {/* <div className="ml-8">
+            <Music className="hidden" />
+          </div> */}
           <div className="ml-auto">
-            <button className="rounded-full px-6 py-2.5 border-[1px] mandaloretitle tracking-[1.8px] text-[14px] whitespace-nowrap">
+            <button className="rounded-full lg:py-2.5  py-2 px-4border-[1px] mandaloretitle tracking-[1px] lg:tracking-[1.8px] text-[12px] lg:text-[14px] whitespace-nowrap">
               connect wallet
             </button>
           </div>
@@ -125,11 +124,18 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="mt-16 mb-10 w-[90rem] mx-auto flex">
-        <div className="border-[0.5px] border-[#FFFFFF33] rounded-lg w-80 p-5">
-          <video src="/videos/w-x-header.mp4" className="w-full rounded-sm" muted autoPlay={'autoplay'} preload="auto" loop></video>
+      <div className="mt-16 mb-10  lg:w-[90rem] mx-auto flex">
+        <div className="border-[0.5px] border-[#FFFFFF33] rounded-lg min-w-[20rem] p-5 ">
+          <video
+            src="/videos/w-x-header.mp4"
+            className="lg:w-full h-full lg:h-auto rounded-sm"
+            muted
+            autoPlay={'autoplay'}
+            preload="auto"
+            loop
+          ></video>
         </div>
-        <div className=" flex mt-10 w-full flex-1">
+        <div className=" flex mt-10 w-full flex-1 flex-col">
           {infomation.map((item, index) => {
             return (
               <div className="last:flex-1 relative mr-4 border-t-[1px] border-[#FFFFFF33] fist:bg-red-200 " key={index}>
@@ -163,12 +169,12 @@ const Header = () => {
 
 export default Header;
 
-const Music = () => {
+const Music = ({ className }) => {
   const [isMute, setMute] = useState(true);
   const classActive = isMute ? '' : 'disabled';
   return (
     <div
-      className={`music-waves mobile ${classActive}`}
+      className={`music-waves mobile ${classActive} ${className}`}
       id="btn-music-mobile"
       onClick={() => {
         setMute((mute) => !mute);
