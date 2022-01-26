@@ -71,7 +71,7 @@ export default WeiTeam;
 
 const CEO = ({ data }) => {
   return (
-    <div className="lg:w-[10rem] flex lg:block items-center">
+    <div className="flex lg:block items-center lg:mt-20">
       <div className="h-[10rem] w-[10rem] lg:h-[20rem] lg:w-[20rem] rounded-full adam flex justify-center items-center p-4">
         <div className="w-full h-full">
           <Image
@@ -86,7 +86,7 @@ const CEO = ({ data }) => {
         </div>
       </div>
       <div className="ml-6">
-        <div className="text-2xl font-black tracking-widest lg:text-center lg:mt-6 uppercase">
+        <div className="text-2xl font-black tracking-widest lg:text-center lg:mt-6 uppercase whitespace-nowrap">
           <span className="font-light mr-5 ">/</span> {data.name} <span className="font-light ml-5">/</span>
         </div>
         <div className="opacity-50 text-sm mt-3 text-center">

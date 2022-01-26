@@ -105,15 +105,15 @@ const Header = () => {
         </nav>
       </div>
       <div className="w-[90rem] px-4 lg:px-0 mx-auto mt-auto mandaloretitle text-[#ffffff99] lg:text-[#FFFFFF66]">
-        <div className="whitespace-pre text-md md:text-xl	">
-          <div className="mb-3">First stage – S-IC</div>
-          <div className="mb-3">Length 138.0 ft (42.1 m) </div>
-          <div className="mb-3">Diameter 33.0 ft (10.1 m) </div>
-          <div className="mb-3">Empty mass 287,000 lb (130,000 kg) </div>
-          <div className="mb-3">Gross mass 5,040,000 lb (2,290,000 kg) </div>
-          <div className="mb-3">Engines 5 Rocketdyne F-1 </div>
-          <div className="mb-3">Thrust 7,891,000 lbf (35,100 kN) sea level </div>
-          <div className="mb-3">Specific impulse 263 seconds (2.58 km/s) sea level</div>
+        <div className="whitespace-pre text-md md:text-xl lg:text-sm	">
+          <div className="mb-3 lg:mb-0">First stage – S-IC</div>
+          <div className="mb-3 lg:mb-0">Length 138.0 ft (42.1 m) </div>
+          <div className="mb-3 lg:mb-0">Diameter 33.0 ft (10.1 m) </div>
+          <div className="mb-3 lg:mb-0">Empty mass 287,000 lb (130,000 kg) </div>
+          <div className="mb-3 lg:mb-0">Gross mass 5,040,000 lb (2,290,000 kg) </div>
+          <div className="mb-3 lg:mb-0">Engines 5 Rocketdyne F-1 </div>
+          <div className="mb-3 lg:mb-0">Thrust 7,891,000 lbf (35,100 kN) sea level </div>
+          <div className="mb-3 lg:mb-0">Specific impulse 263 seconds (2.58 km/s) sea level</div>
         </div>
       </div>
       <div className="mt-12 lg:w-[90rem] px-4 lg:mx-auto">
