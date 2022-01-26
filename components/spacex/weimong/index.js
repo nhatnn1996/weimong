@@ -22,7 +22,7 @@ const WeiMong = () => {
         </div>
       </div>
       <div className="hidden lg:block">
-        <Image src="/images/spacex/overlay-weimong.png" width={'100%'} height={'50%'} layout="responsive" alt="overlay" />
+        {/* <Image src="/images/spacex/overlay-weimong.png" width={'100%'} height={'50%'} layout="responsive" alt="overlay" /> */}
       </div>
       <div className="lg:hidden">
         <Image src="/images/spacex/wei-mong-mobie.png" width={'100%'} height={'155%'} layout="responsive" alt="overlay" />

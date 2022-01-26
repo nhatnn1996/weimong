@@ -9,10 +9,10 @@ const Footer = () => {
   return (
     <div className="bg-[#242424] py-16 relative">
       <div className="lg:w-[90rem] mx-auto flex">
-        <div className="w-1/2 lg:w-2/12 mx-auto">
+        <div className="w-1/2 lg:w-2/12 mx-auto lg:mx-0">
           <Image src="/images/spacex/logo-big.png" width="100%" height={'25.6%'} layout="responsive" alt="big logo" />
         </div>
-        <div className="w-10/12 flex justify-center lg:justify-end items-center absolute bottom-[100%] left-[50%] lg:relative translate-y-[-100%] translate-x-[-50%]">
+        <div className="w-10/12 flex justify-center lg:justify-end items-center absolute bottom-[100%] left-[50%] lg:relative translate-y-[-100%] translate-x-[-50%] lg:translate-x-0 lg:translate-y-0  lg:bottom-0 lg:left-0">
           {socials.map((Icon, index) => {
             return (
               <div className="first:ml-0 ml-4 lg:ml-6 w-10 h-10 lg:w-16 lg:h-16 rounded-full border-[0.5px] border-[#FFFFFF33] flex items-center justify-center" key={index}>

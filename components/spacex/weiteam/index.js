@@ -31,12 +31,12 @@ const WeiTeam = () => {
           wei-team
         </div>
         <div className="lg:border-b-[2px] lg:border-[#7a7a7a] mt-12 lg:mt-24 "></div>
-        <div className="lg:flex px-4 lg:px-0 lg:w-[100vh]">
+        <div className="lg:flex px-4 lg:px-0 lg:w-[100vh] justify-center">
           <div className="lg:w-4/12 flex items-center lg:justify-center">
             <CEO data={teams[0]} />
           </div>
-          <div className="lg:w-5/12 mt-20 lg:mt-0 relative px-2">
-            <div className="absolute h-[calc(100%-30px)] w-full top-[3rem] left-0 bg-black lg:bg-none rounded-lg z-0"></div>
+          <div className="lg:w-5/12 mt-20 lg:mt-0 relative px-2  lg:ml-32">
+            <div className="absolute h-[calc(100%-30px)] w-full top-[3rem] left-0 bg-black lg:bg-none rounded-lg z-0 lg:hidden"></div>
             <div className="flex mt-4 lg:mt-12 justify-between lg:gap-20 lg:mr-10">
               <Team data={teams[1]} />
               <Team data={teams[2]} />
@@ -52,7 +52,7 @@ const WeiTeam = () => {
               <Team data={teams[8]} />
               <Team data={teams[9]} />
             </div>
-            <div className="mt-16 lg:block text-[#FFFFFF66] relative z-10 px-3 ">
+            <div className="mt-16   text-[#FFFFFF66] relative z-10 px-3 lg:hidden">
               <div className="w-fullpt-4 border-t-[1px] border-[#FFFFFF66]"></div>
               <div className="text-xs p-4">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
@@ -99,8 +99,8 @@ const CEO = ({ data }) => {
 
 const Team = ({ data }) => {
   return (
-    <div className="w-[9rem] lg:w-[14rem] flex flex-col items-center lg:block relative z-10">
-      <div className="h-[5rem] w-[5rem] lg:h-[14rem] lg:w-[14rem] rounded-full flex justify-center items-center lg:p-4">
+    <div className="w-[9rem] lg:w-[10rem] flex flex-col items-center lg:block relative z-10">
+      <div className="h-[5rem] w-[5rem] lg:h-[10rem] lg:w-[10rem] rounded-full flex justify-center items-center lg:p-4">
         <div className="w-full h-full">
           <Image
             className="rounded-full"

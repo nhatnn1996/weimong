@@ -67,9 +67,10 @@ const Header = () => {
 
   return (
     <header className="header flex flex-col bg-black text-white top-0 left-0 z-50 relative h-screen bg-[url('/images/spacex/header.png')] bg-cover bg-right">
+      <div className="absolute top-0 left-0 w-full h-full bg-black/30 z-[-1]" ></div>
       <div className="w-[90rem] mx-auto">
-        <nav className="py-5 lg:py-20 flex items-center px-4max-w-[100vw]">
-          <AiOutlineMenu className="w-[1.7rem] h-[1.9rem] stroke-2 cursor-pointer" />
+        <nav className="py-5 xl:px-0 lg:py-20 flex items-center px-4 max-w-[100vw]">
+          <AiOutlineMenu className="w-[1.7rem] h-[1.9rem] stroke-2 cursor-pointer lg:hidden" />
           <div className="hidden lg:block">
             <Link href={'/'} passHref>
               <Image className="cursor-pointer" src="/images/spacex/logo.webp" alt="logo image" width={'164px'} height={'42px'} />
@@ -97,25 +98,25 @@ const Header = () => {
             <Music className="hidden" />
           </div> */}
           <div className="ml-auto">
-            <button className="rounded-full lg:py-2.5  py-2 px-4border-[1px] mandaloretitle tracking-[1px] lg:tracking-[1.8px] text-[12px] lg:text-[14px] whitespace-nowrap">
+            <button className="rounded-full lg:py-2.5  py-2 px-4 border-[1px] mandaloretitle tracking-[1px] lg:tracking-[1.8px] text-[12px] lg:text-[14px] whitespace-nowrap">
               connect wallet
             </button>
           </div>
         </nav>
       </div>
-      <div className="w-[90rem] mx-auto mt-auto mandaloretitle text-[#FFFFFF66]">
-        <div className="whitespace-pre text-md">
-          <div className="bold">First stage – S-IC</div>
-          <div>Length 138.0 ft (42.1 m) </div>
-          <div>Diameter 33.0 ft (10.1 m) </div>
-          <div>Empty mass 287,000 lb (130,000 kg) </div>
-          <div>Gross mass 5,040,000 lb (2,290,000 kg) </div>
-          <div>Engines 5 Rocketdyne F-1 </div>
-          <div>Thrust 7,891,000 lbf (35,100 kN) sea level </div>
-          <div>Specific impulse 263 seconds (2.58 km/s) sea level</div>
+      <div className="w-[90rem] px-4 lg:px-0 mx-auto mt-auto mandaloretitle text-[#ffffff99] lg:text-[#FFFFFF66]">
+        <div className="whitespace-pre text-md md:text-xl	">
+          <div className="mb-3">First stage – S-IC</div>
+          <div className="mb-3">Length 138.0 ft (42.1 m) </div>
+          <div className="mb-3">Diameter 33.0 ft (10.1 m) </div>
+          <div className="mb-3">Empty mass 287,000 lb (130,000 kg) </div>
+          <div className="mb-3">Gross mass 5,040,000 lb (2,290,000 kg) </div>
+          <div className="mb-3">Engines 5 Rocketdyne F-1 </div>
+          <div className="mb-3">Thrust 7,891,000 lbf (35,100 kN) sea level </div>
+          <div className="mb-3">Specific impulse 263 seconds (2.58 km/s) sea level</div>
         </div>
       </div>
-      <div className="mt-12 w-[90rem] mx-auto">
+      <div className="mt-12 lg:w-[90rem] px-4 lg:mx-auto">
         <button className="rounded-full px-8 py-3 border-[1px] mandaloretitle tracking-[1.8px] text-[14px] items-center flex">
           timeline
           <BsChevronCompactRight className="ml-2 w-2 h-2 stroke-2" />
@@ -124,32 +125,32 @@ const Header = () => {
         </button>
       </div>
 
-      <div className="mt-16 mb-10  lg:w-[90rem] mx-auto flex">
-        <div className="border-[0.5px] border-[#FFFFFF33] rounded-lg min-w-[20rem] p-5 ">
+      <div className="mt-16 mb-10 lg:w-[90rem] mx-auto xl:flex">
+        <div className="xl:border-[0.5px] border-[#FFFFFF33] rounded-lg w-[100vw] max-w-[20rem]  p-4 h-fit hidden md:block">
           <video
             src="/videos/w-x-header.mp4"
-            className="lg:w-full h-full lg:h-auto rounded-sm"
+            className="lg:w-full lg:h-auto rounded-md"
             muted
             autoPlay={'autoplay'}
             preload="auto"
             loop
           ></video>
         </div>
-        <div className=" flex mt-10 w-full flex-1 flex-col">
+        <div className="lg:mt-20 w-[100vw] flex-1 flex flex-wrap px-4 xl:px-0">
           {infomation.map((item, index) => {
             return (
-              <div className="last:flex-1 relative mr-4 border-t-[1px] border-[#FFFFFF33] fist:bg-red-200 " key={index}>
+              <div className="last:flex-1 relative mr-4 border-t-[1px] border-[#FFFFFF33] mt-10 xl:mt-0" key={index}>
                 <div className="absolute w-2 h-2 translate-x-[-50%] translate-y-[-50%] rounded-full bg-white" />
                 <div className="mt-4 px-6">
-                  <div className="text-[#FFFFFF66] mandaloretitle text-[12px] tracking-[2px]">{item.label}</div>
-                  <div className="tracking-[1px] font-bold text-[20px] mandaloretitle">{item.value}</div>
+                  <div className="text-[#FFFFFF66] mandaloretitle text-xl 2xl:text-[12px] 2xl:tracking-[2px]">{item.label}</div>
+                  <div className="tracking-[1px] font-bold whitespace-nowrap text-xl 2xl:text-[20px] mandaloretitle">{item.value}</div>
                 </div>
               </div>
             );
           })}
         </div>
-        <div className=" mt-10">
-          <div className="flex translate-y-[-50%]">
+        <div className="mt-20">
+          <div className="flex xl:translate-y-[-50%] justify-center">
             {socials.map((Icon, index) => {
               return (
                 <div

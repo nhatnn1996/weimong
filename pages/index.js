@@ -25,7 +25,7 @@ export default function Home() {
         <WeiMong />
         <RoadMap />
         <div className='relative z-50 flex justify-center'>
-          <video src="/videos/nasa.mp4" autoPlay={'autoplay'} preload="auto" muted className="w-[calc(100vw-2rem)]  lg:w-full absolute top-0 left-[50%] translate-y-[-50%] translate-x-[-50%]" loop></video>
+          <video src="/videos/nasa.mp4" autoPlay={'autoplay'} preload="auto" muted className="w-[calc(100vw-2rem)]  lg:w-full absolute lg:relative top-0 left-[50%] translate-y-[-50%] translate-x-[-50%] lg:left-0 lg:translate-x-[0] lg:translate-y-[0]" loop></video>
         </div>
         <WeiTeam />
         <Partner />
