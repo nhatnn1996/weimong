@@ -24,15 +24,15 @@ const WieSpace = () => {
         <div className="lg:w-[50%] backdrop-blur-lg bg-[#282828ce] h-screen"></div>
       </div>
       <div className="lg:absolute h-full lg:top-0 lg:left-0 w-full z-20">
-        <div className="lg:w-[90rem] px-4 lg:mx-auto py-[43px]">
+        <div className="lg:w-[90rem] px-4 lg:mx-auto py-[43px] lg:flex">
           <div className="lg:w-[40%]">
             <div className="mandaloretitle top-0 px-4 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px]">
               weispace
             </div>
             <div className="mt-4 lg:hidden">
-              <Image src="/images/spacex/weispace.webp" alt="image" width={'100%'} height={'90%'} layout="responsive" />
+              <Image src="/images/spacex/weispace.webp" alt="image" width={'100%'} height={'68%'} layout="responsive" />
             </div>
-
+            <Infomations className="lg:hidden" />
             <div
               className="tamtam mt-12 mx-10 lg:mx-0 py-9 px-10 text-sm leading-7 lg:font-bold lg:leading-5"
               style={{ '--bottom-right': '40px', '--weight': '2px' }}
@@ -65,10 +65,9 @@ const WieSpace = () => {
                   </div>
                 ))}
               </div>
-
-              
             </div>
           </div>
+          <Infomations className="hidden lg:flex" />
         </div>
       </div>
     </div>
@@ -76,3 +75,39 @@ const WieSpace = () => {
 };
 
 export default WieSpace;
+
+const Infomations = ({ className }) => {
+  return (
+    <div className={`lg:w-[60%] self-stretch items-end justify-end lg:pb-32 ${className}`}>
+      <div className="flex w-full justify-center lg:block items-center gap-2">
+        <div className="flex items-center ">
+          <div className="rounded-md lg:w-16 lg:h-16 w-10 h-10">
+            <Image src="/images/spacex/launchdate.svg" alt="image" width={'100%'} height={'100%'} layout="responsive" />
+          </div>
+          <div className="ml-2 mandaloretitle opacity-60 text-xs lg:text-lg">
+            <div >Launch date </div>
+            <div>May 12, 2021</div>
+          </div>
+        </div>
+        <div className="flex items-center lg:mt-3 text-xs lg:text-lg">
+          <div className="rounded-md lg:w-16 lg:h-16 w-10 h-10">
+            <Image src="/images/spacex/speed.svg" alt="image" width={'100%'} height={'100%'} layout="responsive" />
+          </div>
+          <div className="ml-2 mandaloretitle opacity-60">
+            <div>orbital speed </div>
+            <div>7.66 km/s</div>
+          </div>
+        </div>
+        <div className="flex items-center lg:mt-3 text-xs lg:text-lg">
+          <div className="rounded-md lg:w-16 lg:h-16 w-10 h-10">
+            <Image src="/images/spacex/altitude.svg" alt="image" width={'100%'} height={'100%'} layout="responsive" />
+          </div>
+          <div className="ml-2 mandaloretitle opacity-60">
+            <div>orbital altitude </div>
+            <div>408 km</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
