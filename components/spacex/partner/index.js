@@ -39,7 +39,7 @@ const Partner = () => {
         </div>
       </div>
 
-      <div className="border-t-[1px] border-[#707070] mt-12 pb-32 bg-[url('/images/spacex/footer.png')] px-10 bg-cover bg-no-repeat bg-left-bottom py-24">
+      <div className="border-t-[1px] border-[#707070] lg:mt-12 pb-32 bg-[url('/images/spacex/footer.png')] px-10 bg-cover bg-no-repeat bg-left-bottom py-24">
         <div className="lg:w-[90rem] mx-auto lg:pb-10">
           <div className="mandalorecond opacity-70 lg:text-xl lg:w-9/12 lg:tracking-[3px] text-md tracking-[1px]">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,

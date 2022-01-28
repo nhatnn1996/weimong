@@ -93,6 +93,10 @@ a {
   -webkit-mask-repeat: no-repeat;
 }
 
+.import-block{
+  display: block !important;
+}
+
 .drop {
   -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);

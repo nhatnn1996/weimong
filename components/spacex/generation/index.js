@@ -1,4 +1,4 @@
-const title = ['Manufacturers: Weilion Energy', 'Platform: BSC (BEP20)', 'Smart Contrast: Unchane-able', 'concept: : nasa, eu space agency, spacex.'];
+const title = ['Manufacturers: Weilion Energy', 'Platform: BSC (BEP20)', 'Smart Contrast: Unchane-able', 'concept: nasa, eu space agency, spacex.'];
 const Generation = () => {
   return (
     <div className="py-10 bg-[#242424]">
@@ -47,14 +47,14 @@ const Generation = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-center px-6">
+      <div className="lg:flex justify-center px-6">
         <div className="lg:w-8/12">
-          <div className="tamtam mt-0" style={{ '--bottom-right': '40px', '--weight': '3px' }}>
+          <div className="tamtam mt-0 import-block" style={{ '--bottom-right': '40px', '--weight': '3px' }}>
             <div className="border-b-[3px] border-[#7a7a7a] lg:px-10 flex justify-center mandalorecond px-4 text-2xl lg:text-4xl ">
               <div className="px-20 border-b-[2px] border-white py-3 lg:py-6 translate-y-[2px]">purpose</div>
               <div className="px-20 border-b-[2px] border-[#FFFFFF66] py-3 lg:py-6 text-[#FFFFFF66] translate-y-[2px]">advantages</div>
             </div>
-            <div className="p-10 lg:p-20 text-md font-medium">
+            <div className="p-6 lg:p-20 text-md font-medium">
               <div className="mb-2">- Explore the endless universe and the most advanced technologies. </div>
               <div className="mb-2">- Expanding matrix Mission </div>
               <div className="mb-2">- Create a space-cosmic matrix through an infinitely expanding blockchain platform </div>
