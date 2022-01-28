@@ -11,7 +11,7 @@ const subAboutUs = ['team', 'whitepaper', 'roadmap'];
 const menu = [
   {
     label: 'about us',
-    href: '',
+    href: '#',
     sub: subAboutUs
   },
   {

@@ -27,7 +27,7 @@ const WeiTeam = () => {
   return (
     <div className="bg-[#242424] py-4 lg:py-20 mt-32 sm:mt-0 ">
       <div className=" lg:w-[90rem] mx-auto">
-        <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 lg:px-0 mt-10">
+        <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 sm:mx-10 lg:px-0 mt-10">
           wei-team
         </div>
         <div className="lg:border-b-[2px] lg:border-[#7a7a7a] mt-12 lg:mt-24 "></div>

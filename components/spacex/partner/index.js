@@ -34,7 +34,7 @@ const Partner = () => {
         </div>
       </div>
       <div className="lg:w-[90rem] mx-auto py-10 ">
-        <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 lg:px-0">
+        <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 sm:px-10 lg:px-0">
           wei-contact
         </div>
       </div>
