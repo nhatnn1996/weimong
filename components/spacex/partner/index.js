@@ -2,7 +2,7 @@ import Image from 'next/image';
 const Partner = () => {
   return (
     <div className="bg-[#242424]">
-      <div className="lg:w-[90rem] mx-auto py-10 lg:py-20">
+      {/* <div className="lg:w-[90rem] mx-auto py-10 lg:py-20">
         <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-10 lg:px-0">
           wei-partner
         </div>
@@ -32,7 +32,7 @@ const Partner = () => {
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="lg:w-[90rem] mx-auto py-10 ">
         <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 sm:px-10 lg:px-0">
           wei-contact

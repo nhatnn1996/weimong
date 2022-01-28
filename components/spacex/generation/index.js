@@ -17,10 +17,10 @@ const Generation = () => {
         <div className="w-1/3 flex justify-end">
           <div className="mandalore3d text-7xl text-[#858585] hidden lg:block">upto</div>
           <div className="relative mandalorecond text-[#FF6D00] leading-[250px] mx-10">
-            <div className="absolute top-0 left-[-30px] text-[350px] opacity-30">1</div>
-            <div className="absolute top-0 left-[-25px] text-[350px] opacity-40">1</div>
-            <div className="absolute top-0 left-[-15px] text-[350px] opacity-60">1</div>
-            <div className="text-[350px]">1</div>
+            <div className="absolute top-0 left-[-30px] text-[350px] opacity-30">3</div>
+            <div className="absolute top-0 left-[-25px] text-[350px] opacity-40">3</div>
+            <div className="absolute top-0 left-[-15px] text-[350px] opacity-60">3</div>
+            <div className="text-[350px]">3</div>
           </div>
         </div>
         <div className="w-2/3 right-generation h-auto py-2">
