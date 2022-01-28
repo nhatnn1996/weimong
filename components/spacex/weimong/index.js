@@ -3,7 +3,7 @@ import Image from 'next/image';
 const WeiMong = () => {
   
   return (
-    <div className="bg-[#242424] pt-16 pb-40 bg-[url('/images/spacex/weimong.png')] bg-[length:auto_400px] lg:bg-cover bg-no-repeat bg-top-left  lg:mx-0" >
+    <div className="bg-[#242424] pt-16 pb-40 bg-[url('/images/spacex/weimong.png')] bg-[length:auto_400px] md:bg-cover bg-no-repeat bg-top-left  lg:mx-0" >
       <div className="lg:w-[90rem] mx-auto">
       <div className="mandaloretitle top-0 px-4 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px]">wei-mong</div>
         <div className="lg:flex pt-10 lg:py-20 px-4">

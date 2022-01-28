@@ -6,29 +6,29 @@ const Partner = () => {
         <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-10 lg:px-0">
           wei-partner
         </div>
-        <div className="flex gap-4 lg:gap-16 my-10 lg:my-32 justify-center px-4 flex-wrap">
-          <div className="w-[47%] py-7  lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+        <div className="flex my-10 lg:my-32 px-4  gap-4 flex-wrap justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44  rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
-          <div className="w-[47%] py-7 lg:w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
+          <div className="py-7 w-44 rounded-3xl border-[#707070] border-[1px] flex items-center justify-center">
             <Image src="/images/spacex/partner-kardia.png" width={'100%'} height="40%" layout="intrinsic" alt="partner" />
           </div>
         </div>
