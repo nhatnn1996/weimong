@@ -13,10 +13,10 @@ const Generation = () => {
       </div>
 
       <div className="mandalore3d text-7xl text-[#858585] text-center block lg:hidden">upto</div>
-      <div className="flex mt-4">
+      <div className="flex mt-4 pl-10 md:pl-0 translate-x-[8px] md:translate-x-0 ">
         <div className="w-1/3 flex justify-end">
-          <div className="mandalore3d text-7xl text-[#858585] hidden lg:block">upto</div>
-          <div className="relative mandalorecond text-[#FF6D00] leading-[250px] mx-10">
+          <div className="mandalore3d text-7xl text-[#858585] hidden lg:block ">upto</div>
+          <div className="relative mandalorecond text-[#FF6D00] leading-[250px] mx-10 translate-y-[-8px] md:translate-y-0 ">
             <div className="absolute top-0 left-[-30px] text-[350px] opacity-30">3</div>
             <div className="absolute top-0 left-[-25px] text-[350px] opacity-40">3</div>
             <div className="absolute top-0 left-[-15px] text-[350px] opacity-60">3</div>
@@ -30,7 +30,7 @@ const Generation = () => {
           </div>
           <div className="mandalore3d text-6xl mt-6">cost</div>
           <div className="flex items-end mt-4">
-            <div className="text-4xl mandaloretitle text-[#FF6D00]">10 Million</div>
+            <div className="text-4xl mandaloretitle text-[#FF6D00]">15 Million</div>
             <div className="text-1xl mandaloretitle ml-3 text-white/90 ">Weilion Tokens</div>
           </div>
           <div className=" border-t-[0.5px] border-t-[#FF6D00] mt-4" />

@@ -25,7 +25,7 @@ const teams = [
 
 const WeiTeam = () => {
   return (
-    <div className="bg-[#242424] py-4 lg:py-20 mt-32 sm:mt-0 ">
+    <div className="bg-[#242424] py-4 lg:py-20 pt-24 sm:pt-0 ">
       <div className=" lg:w-[90rem] mx-auto">
         <div className="mandaloretitle top-0 left-0 opacity-75 text-stroke text-transparent text-6xl lg:text-8xl tracking-[2px] lg:tracking-[16px] px-4 sm:mx-10 lg:px-0 mt-10">
           wei-team
@@ -71,8 +71,8 @@ export default WeiTeam;
 
 const CEO = ({ data }) => {
   return (
-    <div className="flex lg:block items-center lg:mt-20">
-      <div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[20rem] lg:w-[20rem] rounded-full adam flex justify-center items-center p-4">
+    <div className="flex lg:block items-center lg:mt-20 ml-10 lg:ml-0">
+      <div className="h-[10rem] w-[10rem] sm:h-[20rem] sm:w-[20rem] lg:h-[20rem] lg:w-[20rem] rounded-full adam flex justify-center items-center p-3 md:p-4">
         <div className="w-full h-full">
           <Image
             className="rounded-full"
@@ -99,8 +99,8 @@ const CEO = ({ data }) => {
 
 const Team = ({ data }) => {
   return (
-    <div className="w-[30%] lg:w-[10rem] flex flex-col items-center lg:block relative z-10">
-      <div className=" w-[70%] lg:h-[10rem] lg:w-[10rem] rounded-full flex justify-center items-center lg:p-4">
+    <div className="w-[30%] lg:w-[14rem] flex flex-col items-center lg:block relative z-10">
+      <div className=" w-[70%] lg:h-[14rem] lg:w-[14rem] rounded-full flex justify-center items-center lg:p-4">
         <div className="w-full h-full">
           <Image
             className="rounded-full"

@@ -15,7 +15,7 @@ const WeiMong = () => {
               </div>
               <div className="mt-4"> Weimong builds an ecosystem to help users entertain and earn more NFT.</div>
             </div>
-            <Link passHref href="/weillion">
+            <Link passHref href="/#">
               <button className="rounded-full bg-[#FF6600] px-10 lg:px-16 py-3 mandaloretitle text-2xl lg:ml-20 mt-16">Go to now</button>
             </Link>
           </div>
