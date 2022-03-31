@@ -1,9 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@layer components {
+  .menu-active {
+    @apply text-2xl my-7 leading-snug;
+    color: #EFCB5A
+  }
+}
 
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); */
 @font-face {
   font-family: Grandstander;
   src: url(../public/fonts/grandstander/Grandstander-clean.ttf);
@@ -13,18 +19,16 @@
   src: url(../public/fonts/pinkchicken/PinkChicken-Regular.ttf);
 }
 
+.text-gray {
+  color: #fafafa;
+}
+
 .grandstander {
   font-family: Grandstander;
 }
 
 .pinkchicken {
   font-family: Pinkchicken;
-}
-
-@layer components {
-  .menu-active {
-    @apply text-main text-2xl my-7 leading-snug;
-  }
 }
 
 .border-left-active {

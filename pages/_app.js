@@ -13,10 +13,10 @@ function MyApp({ Component, pageProps }) {
   const router = useRouter();
 
   return (
-    <div className="flex w-screen">
+    <div className="flex w-screen h-screen relative overflow-y-hidden">
       <SlideLeft />
       <AnimatePresence exitBeforeEnter>
-        <div className="bg-black bg-[url(/images/weimong/bg.jpg)] w-full min-h-screen bg-[length:50%_auto]">
+        <div className="bg-black bg-[url(/images/weimong/bg.jpg)] w-full min-h-screen bg-[length:50%_auto] overflow-y-scroll">
           <motion.main
             key={router.pathname}
             variants={variants} // Pass the variant object into Framer Motion

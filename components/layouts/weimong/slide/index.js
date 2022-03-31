@@ -19,11 +19,11 @@ const SlideLeft = () => {
   useEffect(() => {}, []);
 
   return (
-    <nav className="min-w-[23.563rem] max-w-[23.563rem] bg-[#171717]  py-[3.125rem] grandstander min-h-screen shadow-sm">
+    <nav className="min-w-[23.563rem] max-w-[23.563rem] bg-[#171717]  py-[3.125rem] grandstander min-h-screen shadow-sm sticky top-0">
       <div className="image px-[5.875rem]">
         <Image src="/images/weimong/logo.png" width={'12.375rem'} layout="responsive" height="3.25rem" alt="not found logo" />
       </div>
-      <ul className="mt-[10.75rem] text-base leading-9 text-white text-gray">
+      <ul className="mt-[10.75rem] text-base leading-9 text-[#AFAFAF]">
         {menu.map((element, index) => {
           const isActive = element.href === router.pathname ? 'menu-active border-left-active' : '';
           return (
