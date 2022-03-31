@@ -3,187 +3,41 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+@font-face {
+  font-family: Grandstander;
+  src: url(../public/fonts/grandstander/Grandstander-clean.ttf);
+}
+@font-face {
+  font-family: Pinkchicken;
+  src: url(../public/fonts/pinkchicken/PinkChicken-Regular.ttf);
+}
+
+.grandstander {
+  font-family: Grandstander;
+}
+
+@layer components {
+  .menu-active {
+    @apply text-main text-2xl py-7
+  }
+  /* ... */
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: Pinkchicken, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  font-size: 16px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (max-width: 1440px) {
-  html,
-  body {
-    font-size: 12px;
-  }
-}
-
-@font-face {
-  font-family: mandalore3d;
-  src: url('/fonts/mandalore/mandalore3d.ttf');
-}
-
-@font-face {
-  font-family: mandalorecond;
-  src: url('/fonts/mandalore/mandalorecond.ttf');
-}
-
-@font-face {
-  font-family: mandaloretitle;
-  src: url('/fonts/mandalore/mandaloretitle.ttf');
-}
-
-@font-face {
-  font-family: mandalorehalf;
-  src: url('/fonts/mandalore/mandalorehalf.ttf');
-}
-
-.mandalorehalf {
-  font-family: mandalorehalf;
-}
-
-.mandalore3d {
-  font-family: mandalore3d;
-}
-
-.mandalorecond {
-  font-family: mandalorecond;
-}
-
-.mandaloretitle {
-  font-family: mandaloretitle;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: normal;
-}
-
-.text-stroke {
-  /* Prefix required. Even Firefox only supports the -webkit- prefix */
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #e1e1e1;
-}
-.tamtam {
-  background-color: #19191918;
-  --all: 0px;
-  --b: #7a7a7a;
-  display: inline-block;
-  border: var(--weight) solid var(--b);
-  background: linear-gradient(45deg, var(--b) 0 calc(var(--bottom-left, var(--all)) + var(--weight)), transparent 0) bottom left / 50% 50%,
-    linear-gradient(-45deg, var(--b) 0 calc(var(--bottom-right, var(--all)) + var(--weight)), transparent 0) bottom right/50% 50%,
-    linear-gradient(135deg, var(--b) 0 calc(var(--top-left, var(--all)) + var(--weight)), transparent 0) top left / 50% 50%,
-    linear-gradient(-135deg, var(--b) 0 calc(var(--top-right, var(--all)) + var(--weight)), transparent 0) top right / 50% 50%, var(--img, #19191918);
-  background-origin: border-box;
-  background-repeat: no-repeat;
-  -webkit-mask: linear-gradient(45deg, transparent 0 var(--bottom-left, var(--all)), #fff 0) bottom left,
-    linear-gradient(-45deg, transparent 0 var(--bottom-right, var(--all)), #fff 0) bottom right,
-    linear-gradient(135deg, transparent 0 var(--top-left, var(--all)), #fff 0) top left,
-    linear-gradient(-135deg, transparent 0 var(--top-right, var(--all)), #fff 0) top right;
-  -webkit-mask-size: 50.5% 50.5%;
-  -webkit-mask-repeat: no-repeat;
-}
-
-.import-block{
-  display: block !important;
-}
-
-.drop {
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
-  background-color: #fff;
-}
-
-.overlay {
-  background: transparent linear-gradient(180deg, #060a0d 0%, #14161800 100%) 0% 0% no-repeat padding-box;
-}
-.overlay-bottom {
-  background: transparent linear-gradient(0deg, #242424 0%, #24242400 100%) 0% 0% no-repeat padding-box;
-}
-.right-generation {
-  background: transparent linear-gradient(270deg, #ff6d00 0%, #80370000 100%) 0% 0% no-repeat padding-box;
-}
-
-.shadow-bold {
-  box-shadow: 0px 16px 14px #00000070;
-}
-.overlay-roadmap {
-  background: transparent linear-gradient(0deg, #242424 0%, #24242400 100%) 0% 0% no-repeat padding-box;
-}
-
-.adam {
-  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23d5d5d5FF' stroke-width='3' stroke-dasharray='60%25%2c 40%25' stroke-dashoffset='9' stroke-linecap='square'/%3e%3c/svg%3e");
-  border-radius: 90000px;
-}
-
-.music-waves {
-  height: 20px;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  /* opacity: 0.5; */
-}
-
-.music-waves span {
-  display: block;
-  position: relative;
-  background: white;
-  height: 100%;
-  width: 3px;
-  border-radius: 50px;
-  margin: 0 3px;
-  animation: animate 1.2s linear infinite;
-  transition: 0.3s ease-in-out;
-}
-
-span:nth-child(1) {
-  animation-delay: 0s;
-}
-
-span:nth-child(2) {
-  animation-delay: 0.3s;
-}
-
-span:nth-child(3) {
-  animation-delay: 0.6s;
-}
-
-span:nth-child(4) {
-  animation-delay: 0.9s;
-}
-
-span:nth-child(5) {
-  animation-delay: 0.6s;
-}
-
-span:nth-child(6) {
-  animation-delay: 0.3s;
-}
-
-span:nth-child(7) {
-  animation-delay: 0s;
-}
-
-.music-waves.disabled span {
-  animation: 0;
-  height: 30%;
-}
-
-@keyframes animate {
-  50% {
-    height: 20%;
-  }
-
-  100% {
-    height: 100%;
+@media only screen and (max-width: 1440px) {
+  html, body {
+    font-size: 13mpx;
   }
 }
