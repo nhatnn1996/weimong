@@ -17,18 +17,25 @@
   font-family: Grandstander;
 }
 
+.pinkchicken {
+  font-family: Pinkchicken;
+}
+
 @layer components {
   .menu-active {
-    @apply text-main text-2xl py-7
+    @apply text-main text-2xl my-7 leading-snug;
   }
-  /* ... */
+}
+
+.border-left-active {
+  border-right: 4px solid #e9bf50;
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Pinkchicken, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+  font-family: Grandstander, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,7 +44,57 @@ body {
 }
 
 @media only screen and (max-width: 1440px) {
-  html, body {
-    font-size: 13mpx;
+  html,
+  body {
+    font-size: 13px;
   }
+}
+
+.wrap-button-left:hover {
+  filter: drop-shadow(0px 0px 10px #e9bf50);
+}
+.wrap-button-right:hover {
+  filter: drop-shadow(0px 0px 10px #373737);
+}
+
+.button-tab-left {
+  font-family: Grandstander;
+  background: #e9bf50 0% 0% no-repeat padding-box;
+  padding: 10px 20px 6px 20px;
+  font-size: 1.2rem;
+  width: 15rem;
+  height: 3.75rem;
+  clip-path: polygon(0 0, 90% 0, 100% 100%, 3% 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(8px);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #432806;
+}
+.button-tab-right {
+  font-family: Grandstander;
+  background: #373737;
+  padding: 10px 20px 6px 20px;
+  font-size: 1.2rem;
+  width: 15rem;
+  height: 3.75rem;
+  clip-path: polygon(0 0, 100% 3%, 97% 100%, 10% 100%);
+  transform: translateX(-8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: #8a8a8e;
+}
+
+.button-tab-left:hover {
+  box-shadow: 2px 2px 5px #e9bf50;
+  transform: translate3d(0, -5px, 0) scale(1.05);
+}
+.button-tab-right:hover {
+  box-shadow: 2px 2px 5px #e9bf50;
+  transform: translate3d(0, -5px, 0) scale(1.05);
 }

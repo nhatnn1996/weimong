@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { BiBadgeCheck } from 'react-icons/bi';
 
 const menu = [
   { children: 'Home', href: '/' },
@@ -23,23 +24,41 @@ const SlideLeft = () => {
   }, []);
 
   return (
-    <nav className="w-[23.563rem] max-w-[23.563rem] bg-[#171717] px-[5.875rem] py-[3.125rem] grandstander">
-      <div className="image">
+    <nav className="min-w-[23.563rem] max-w-[23.563rem] bg-[#171717]  py-[3.125rem] grandstander min-h-screen">
+      <div className="image px-[5.875rem]">
         <Image src="/images/weimong/logo.png" width={'12.375rem'} layout="responsive" height="3.25rem" alt="not found logo" />
       </div>
       <ul className="mt-[10.75rem] text-base leading-9 text-white text-gray">
         {menu.map((element, index) => {
-          const isActive = element.href === router.pathname ? 'menu-active' : '';
+          const isActive = element.href === router.pathname ? 'menu-active border-left-active' : '';
           return (
-            <li className={`mb-6 whitespace-nowrap`} key={index}>
+            <li className={`mb-6  whitespace-nowrap pl-[5.875rem]`} key={index}>
               <Link href={element.href} passHref>
-                <a className={`block ease-in-out duration-300 ${isActive}`}>{element.children}</a>
+                <a className={`flex items-center h-11 ease-in-out duration-300 ${isActive}`}>
+                  <span className="flex items-center">
+                    <IconRender isOpen={element.href === router.pathname} />
+                    {element.children}
+                  </span>
+                </a>
               </Link>
             </li>
           );
         })}
       </ul>
     </nav>
+  );
+};
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: '-30px' }
+};
+
+const IconRender = ({ isOpen }) => {
+  return (
+    <motion.span animate={isOpen ? 'open' : 'closed'} initial={'closed'} variants={variants} transition={{ duration: 0.2 }}>
+      <BiBadgeCheck className="mr-4" />
+    </motion.span>
   );
 };
 
