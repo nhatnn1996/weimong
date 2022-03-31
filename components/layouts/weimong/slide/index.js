@@ -16,15 +16,10 @@ const menu = [
 
 const SlideLeft = () => {
   const router = useRouter();
-  const [active, setActive] = useState(0);
-  useEffect(() => {
-    // menu.forEach((element) => {
-    //   router.prefetch(element.href);
-    // });
-  }, []);
+  useEffect(() => {}, []);
 
   return (
-    <nav className="min-w-[23.563rem] max-w-[23.563rem] bg-[#171717]  py-[3.125rem] grandstander min-h-screen">
+    <nav className="min-w-[23.563rem] max-w-[23.563rem] bg-[#171717]  py-[3.125rem] grandstander min-h-screen shadow-sm">
       <div className="image px-[5.875rem]">
         <Image src="/images/weimong/logo.png" width={'12.375rem'} layout="responsive" height="3.25rem" alt="not found logo" />
       </div>
@@ -57,7 +52,7 @@ const variants = {
 const IconRender = ({ isOpen }) => {
   return (
     <motion.span animate={isOpen ? 'open' : 'closed'} initial={'closed'} variants={variants} transition={{ duration: 0.2 }}>
-      <BiBadgeCheck className="mr-4" />
+      <BiBadgeCheck className="mr-4 mb-2" />
     </motion.span>
   );
 };

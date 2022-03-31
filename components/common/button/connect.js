@@ -1,7 +1,7 @@
-import { buttonLogin } from './button.module.css';
-export const ButtonLogin = () => {
+import { connect } from './button.module.css';
+export const ConnectWalet = () => {
   return (
-    <button className={buttonLogin}>
+    <button className={connect}>
       <span>Connect wallet</span>
     </button>
   );

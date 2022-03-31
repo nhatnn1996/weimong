@@ -43,10 +43,10 @@ body {
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1700px) {
   html,
   body {
-    font-size: 13px;
+    font-size: 12px !important;
   }
 }
 
@@ -68,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateX(8px);
+  transform: translateX(0.5rem);
   cursor: pointer;
   transition: 0.3s ease-in-out;
   color: #432806;
@@ -81,7 +81,7 @@ body {
   width: 15rem;
   height: 3.75rem;
   clip-path: polygon(0 0, 100% 3%, 97% 100%, 10% 100%);
-  transform: translateX(-8px);
+  transform: translateX(-0.5rem);
   display: flex;
   align-items: center;
   justify-content: center;

@@ -16,17 +16,19 @@ function MyApp({ Component, pageProps }) {
     <div className="flex w-screen">
       <SlideLeft />
       <AnimatePresence exitBeforeEnter>
-        <motion.main
-          key={router.pathname}
-          variants={variants} // Pass the variant object into Framer Motion
-          initial="hidden" // Set the initial state to variants.hidden
-          animate="enter" // Animated state to variants.enter
-          exit="exit" // Exit state (used later) to variants.exit
-          transition={{ type: 'linear', duration: 0.3 }} // Set the transition to linear
-          className="w-full"
-        >
-          <Component {...pageProps} />
-        </motion.main>
+        <div className="bg-black bg-[url(/images/weimong/bg.jpg)] w-full min-h-screen bg-[length:50%_auto]">
+          <motion.main
+            key={router.pathname}
+            variants={variants} // Pass the variant object into Framer Motion
+            initial="hidden" // Set the initial state to variants.hidden
+            animate="enter" // Animated state to variants.enter
+            exit="exit" // Exit state (used later) to variants.exit
+            transition={{ type: 'linear', duration: 0.2 }} // Set the transition to linear
+            className=""
+          >
+            <Component {...pageProps} />
+          </motion.main>
+        </div>
       </AnimatePresence>
     </div>
   );
