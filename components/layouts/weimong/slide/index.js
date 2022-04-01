@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { BiBadgeCheck } from 'react-icons/bi';
+import { AlienIcon } from '@/components/icons';
 
 const menu = [
   { children: 'Home', href: '/' },
@@ -52,7 +52,7 @@ const variants = {
 const IconRender = ({ isOpen }) => {
   return (
     <motion.span animate={isOpen ? 'open' : 'closed'} initial={'closed'} variants={variants} transition={{ duration: 0.2 }}>
-      <BiBadgeCheck className="mr-4 mb-2" />
+      <AlienIcon className="mr-6 mb-2 w-6 h-6" />
     </motion.span>
   );
 };
