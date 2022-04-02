@@ -13,9 +13,6 @@ export default function Home() {
         <div className="bg-[#222222] text-white relative z-10 bg-[url(/images/weimong/bg-home.png)] bg-[length:100%] bg-no-repeat">
           <div className="flex flex-col justify-between h-screen">
             <div className="flex pt-[7rem] justify-center relative">
-              <div className="absolute top-10 right-10">
-                <ButtonLogin />
-              </div>
               <ButtonTab />
             </div>
             <div className="mb-10">
