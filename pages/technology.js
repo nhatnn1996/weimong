@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 
-export default function Home() {
+export default function Technology() {
   return (
     <div className="flex items-center justify-center h-screen">
       <div className="bg-[url(/images/weimong/bg-content.png)] w-[62.3rem] h-[31.3rem] px-32 py-32">
