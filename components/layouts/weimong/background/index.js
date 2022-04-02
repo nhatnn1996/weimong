@@ -6,21 +6,24 @@ import { ButtonLogin } from '@/components/common/button';
 
 const bgTopFollowPathname = {
   '/': { x: '-30%', width: '26rem' },
-  '/vison': { x: '30%', width: '28rem' }
+  '/vison': { x: '30%', width: '28rem' },
+  '/technology': { x: '-200%' }
 };
 
 const bgLeftFollowPathname = {
   '/': { x: 0 },
-  '/vison': { x: '-100%' }
+  '/vison': { x: '-100%' },
+  '/technology': { x: '-100%' }
 };
 const bgRightFollowPathname = {
   '/': { x: 0 },
-  '/vison': { x: '100%' }
+  '/vison': { x: '100%' },
+  '/technology': { y: '50%', x: '0%' }
 };
 
 const transition = {
   duration: 0.3,
-  type: 'ease-in',
+  type: 'ease-in'
 };
 
 const BackgroundMotion = () => {

@@ -5,11 +5,11 @@ import { Button } from '@/components/common/button';
 
 export default function Home() {
   return (
-    <div className='py-10'>
+    <div className="py-10">
       <div className="flex py-[5rem] px-[3.5rem] flex-wrap">
         <div className="w-1/2 pr-6">
           <div className="w-[35rem] h-[19.375rem]">
-            <Image src={'/images/weimong/free.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
+            <Image priority src={'/images/weimong/free.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
           </div>
         </div>
         <div className="w-1/2 pl-6 flex items-center">
@@ -30,13 +30,13 @@ export default function Home() {
         </div>
         <div className="w-1/2 pl-6 flex items-center  mt-6">
           <div className="w-[39.5rem] h-[25.938rem]">
-            <Image src={'/images/weimong/owner.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
+            <Image priority src={'/images/weimong/owner.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
           </div>
         </div>
 
         <div className="w-1/2 pr-6">
           <div className="w-[35.125rem] h-[34.375rem]">
-            <Image src={'/images/weimong/added.png'} alt="not found image" width={'100%'} height={'100%'} layout="responsive" />
+            <Image priority src={'/images/weimong/added.png'} alt="not found image" width={'100%'} height={'100%'} layout="responsive" />
           </div>
         </div>
         <div className="w-1/2 pl-6 flex items-center">
