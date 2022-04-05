@@ -11,3 +11,46 @@ export const AlienIcon = ({ className }) => {
     </svg>
   );
 };
+export const TitleSpecialCom = ({ children, className }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      id="Group_166"
+      data-name="Group 166"
+      width="100%"
+      height="24%"
+      viewBox="0 0 382.83 91.376"
+      className={'' + className}
+    >
+      <path
+        id="Path_82"
+        data-name="Path 82"
+        d="M395.388,331.239l8.372-6.006H54.252V362.7l26.119-31.456Z"
+        transform="translate(-54.252 -325.233)"
+        fill="#d97f12"
+      />
+      <path id="Path_83" data-name="Path 83" d="M271.32,353.656V325.233H248.6l-5.345,3.835Z" transform="translate(110.547 -325.233)" fill="#efcb5a" />
+      <path
+        id="Path_84"
+        data-name="Path 84"
+        d="M397.194,333.5H83.007l-28.755,34.63v36.055H436.12V357.77l-32.755-28.693Z"
+        transform="translate(-54.252 -321.881)"
+        fill="#3d3d3d"
+      />
+      <text
+        id="Milestone"
+        // transform="translate(0.83 31.376)"
+        fill="#fff"
+        fontSize="24"
+        fontFamily="GranstanderClean, Granstander Clean"
+        letterSpacing="0.05em"
+        x="50%"
+        y="50%"
+        dominantBaseline="middle"
+        textAnchor="middle"
+      >
+        <tspan>{children}</tspan>
+      </text>
+    </svg>
+  );
+};

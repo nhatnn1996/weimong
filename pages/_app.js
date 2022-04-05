@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
     <div className="flex w-screen h-screen relative overflow-y-hidden overflow-x-hidden">
       <SlideLeft />
       <AnimatePresence exitBeforeEnter>
-        <div className="bg-black bg-[url(/images/weimong/bg.jpg)] w-full min-h-screen bg-[length:50%_auto] overflow-y-scroll relative">
+        <div className="bg-black bg-[url(/images/weimong/bg.jpg)] w-full min-h-screen bg-[length:100%_auto] overflow-y-scroll relative">
           <BackgroundMotion />
           <motion.main
             key={router.pathname}
