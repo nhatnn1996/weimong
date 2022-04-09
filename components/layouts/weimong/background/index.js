@@ -39,7 +39,14 @@ const BackgroundMotion = () => {
         className="absolute top-0 right-0 w-[30rem]  z-20"
         transition={transition}
       >
-        <Image src="/images/weimong/bg-top.png" width={'35.893rem'} layout="responsive" height="8.375rem" alt="not found background-top" />
+        <Image
+          priority={true}
+          src="/images/weimong/bg-top.png"
+          width={'35.893rem'}
+          layout="responsive"
+          height="8.375rem"
+          alt="not found background-top"
+        />
       </motion.div>
 
       <motion.div
@@ -48,7 +55,14 @@ const BackgroundMotion = () => {
         className="absolute top-[20%] left-0 w-[9.563rem] h-[24.25rem] z-20"
         transition={transition}
       >
-        <Image src="/images/weimong/bg-left.png" width={'9.563rem'} layout="responsive" height="24.25rem" alt="not found background-top" />
+        <Image
+          priority={true}
+          src="/images/weimong/bg-left.png"
+          width={'9.563rem'}
+          layout="responsive"
+          height="24.25rem"
+          alt="not found background-top"
+        />
       </motion.div>
 
       <motion.div
@@ -57,7 +71,14 @@ const BackgroundMotion = () => {
         className="absolute top-[30%] right-0 w-[6.313rem] h-[11.188rem] z-20"
         transition={transition}
       >
-        <Image src="/images/weimong/bg-right.png" width={'6.313rem'} layout="responsive" height="11.188rem" alt="not found background-top" />
+        <Image
+          priority={true}
+          src="/images/weimong/bg-right.png"
+          width={'6.313rem'}
+          layout="responsive"
+          height="11.188rem"
+          alt="not found background-top"
+        />
       </motion.div>
 
       <div className="absolute top-10 right-10 z-20">

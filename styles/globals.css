@@ -5,7 +5,7 @@
 @layer components {
   .menu-active {
     @apply text-2xl my-7 leading-snug;
-    color: #EFCB5A
+    color: #efcb5a;
   }
 }
 
@@ -101,4 +101,30 @@ body {
 .button-tab-right:hover {
   box-shadow: 2px 2px 5px #e9bf50;
   transform: translate3d(0, -5px, 0) scale(1.05);
+}
+
+.list-roadmap {
+  padding-left: 4rem;
+}
+.list-roadmap li {
+  position: relative;
+}
+
+.list-roadmap li::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  right: 100%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 100px;
+  margin-right: 1rem;
+  /* transform: translateY(-50%); */
+  border: 1px solid whitesmoke
+}
+
+.list-roadmap li.active::before {
+  background-color: #6aff08;
+  border: none;
 }

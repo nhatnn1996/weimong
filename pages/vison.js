@@ -9,7 +9,7 @@ export default function Home() {
       <div className="flex py-[5rem] px-[3.5rem] md:px-[6rem] xl:px-[10rem] flex-wrap">
         <div className="w-1/2 text-left">
           <div className="w-[35rem] h-[19.375rem]">
-            <Image priority src={'/images/weimong/free.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
+            <Image priority={true} src={'/images/weimong/free.png'} alt="not found image" width={'35rem'} height={'19.375rem'} layout="responsive" />
           </div>
         </div>
         <div className="w-1/2 flex items-center justify-end">
@@ -23,7 +23,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-1/2 mt-10 2xl:mt-32 flex items-center">
+        <div className="w-1/2 mt-10 2xl:mt-32 flex items-center h-full">
           <div className="flex justify-start w-full">
             <div className="w-[95%]">
               <TitleSpecial>Owned by the players</TitleSpecial>
@@ -36,13 +36,13 @@ export default function Home() {
         </div>
         <div className="w-1/2 mt-10 2xl:mt-32 text-right">
           <div className="w-[35rem] ml-auto">
-            <Image priority src={'/images/weimong/owner.png'} alt="not found image" width={'100%'} height={'55.3%'} layout="responsive" />
+            <Image priority={true} src={'/images/weimong/owner.png'} alt="not found image" width={'100%'} height={'55.3%'} layout="responsive" />
           </div>
         </div>
 
         <div className="w-1/2 mt-10 2xl:mt-32">
           <div className="w-[35.125rem] h-[34.375rem]">
-            <Image priority src={'/images/weimong/added.png'} alt="not found image" width={'100%'} height={'100%'} layout="responsive" />
+            <Image priority={true} src={'/images/weimong/added.png'} alt="not found image" width={'100%'} height={'100%'} layout="responsive" />
           </div>
         </div>
         <div className="w-1/2 flex items-center justify-end mt-10 2xl:mt-32 ">
