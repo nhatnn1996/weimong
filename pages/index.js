@@ -1,7 +1,11 @@
 import Head from 'next/head';
 import { ButtonTab, ConnectWalet, Button } from '@/components/common/button';
 import { TitleSpecialCom } from '@/components/icons';
-
+import VisibilitySensor from 'react-visibility-sensor';
+import CountUp from 'react-countup';
+const containerProps = {
+  'aria-busy': true
+};
 export default function Home() {
   return (
     <div className="">
@@ -31,21 +35,37 @@ export default function Home() {
             <div className="flex justify-center ">
               <TitleSpecialCom className="w-[26rem]">Milestone</TitleSpecialCom>
             </div>
+
             {/* <button className="px-20 rounded-sm pt-4 pb-3 text-2xl bg-[#3D3D3D] inline-block shadow-xl"></button> */}
-            <div className="mt-[4.5rem] flex justify-between px-20 text-gray">
-              <div>
-                <div className="text-xl mb-4">Registered User</div>
-                <div className="text-5xl px-20">3.208.863</div>
-              </div>
-              <div>
-                <div className="text-xl mb-4">NFT Trade Volume</div>
-                <div className="text-5xl px-20">3.208.863</div>
-              </div>
-              <div>
-                <div className="text-xl mb-4">NFTs Minted</div>
-                <div className="text-5xl px-20">3.208.863</div>
-              </div>
-            </div>
+
+            <VisibilitySensor partialVisibility offset={{ top: 100 }}>
+              {({ isVisible }) => (
+                <div style={{ minHeight: 100 }}>
+                  {isVisible ? (
+                    <div className="mt-[4.5rem] flex justify-between px-20 text-gray">
+                      <div>
+                        <div className="text-xl mb-4">Registered User</div>
+                        <div className="text-5xl px-20">
+                          <CountUp duration={3} end={3208863} containerProps={containerProps} start={0} />{' '}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="text-xl mb-4">NFT Trade Volume</div>
+                        <div className="text-5xl px-20">
+                          <CountUp duration={3} end={3208863} containerProps={containerProps} start={0} />{' '}
+                        </div>
+                      </div>
+                      <div>
+                        <div className="text-xl mb-4">NFTs Minted</div>
+                        <div className="text-5xl px-20">
+                          <CountUp duration={3} decimal={"."} end={3208863} containerProps={containerProps} start={0} />{' '}
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
+                </div>
+              )}
+            </VisibilitySensor>
           </div>
           <div className="text-center py-32">
             <Button>Play now</Button>

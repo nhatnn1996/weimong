@@ -8,7 +8,7 @@ export default function Home() {
     <div className="py-10 relative z-10">
       <div className="flex py-[5rem] px-[3.5rem] md:px-[6rem] xl:px-[20rem] flex-wrap">
         <div className="w-1/2 text-left">
-          <div className="w-[23.813rem] ">
+          <div className="w-[23.813rem] wow slideInLeft" data-wow-duration="2s" data-wow-delay="5s">
             <Image priority={true} src={'/images/weimong/roadmap-1.png'} alt="not found image" width={'100%'} height={'97.3%'} layout="responsive" />
           </div>
         </div>
