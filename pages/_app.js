@@ -7,8 +7,8 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import BackgroundMotion from '@/components/layouts/weimong/background/index';
 
-const isServer = typeof window === 'undefined';
-const WOW = !isServer ? require('wowjs') : null;
+// const isServer = typeof window === 'undefined';
+// const WOW = !isServer ? require('wowjs') : null;
 // console.log("load image")
 
 const variants = {
@@ -18,10 +18,10 @@ const variants = {
 };
 
 function MyApp({ Component, pageProps }) {
-  const router = useRouter();
-  useEffect(() => {
-    new WOW.WOW({}).init();
-  }, []);
+  // const router = useRouter();
+  // useEffect(() => {
+  //   new WOW.WOW({}).init();
+  // }, []);
 
   return (
     <>
