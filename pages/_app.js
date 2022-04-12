@@ -18,7 +18,7 @@ const variants = {
 };
 
 function MyApp({ Component, pageProps }) {
-  // const router = useRouter();
+  const router = useRouter();
   // useEffect(() => {
   //   new WOW.WOW({}).init();
   // }, []);
