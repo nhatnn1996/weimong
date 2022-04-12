@@ -9,7 +9,7 @@ import BackgroundMotion from '@/components/layouts/weimong/background/index';
 
 const isServer = typeof window === 'undefined';
 const WOW = !isServer ? require('wowjs') : null;
-console.log("load image")
+// console.log("load image")
 
 const variants = {
   hidden: { opacity: 0, x: 0, y: 0 },
