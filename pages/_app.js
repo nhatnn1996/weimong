@@ -32,7 +32,7 @@ function MyApp({ Component, pageProps }) {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <div className="px-8 py xl:pb-10 xl:px-20 h-[100vh] flex flex-col">
+      <div className="px-8 py xl:pb-10 xl:px-20 xl:h-[100vh] flex flex-col">
         <Header />
         <AnimatePresence exitBeforeEnter>
           <motion.main
