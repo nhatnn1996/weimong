@@ -7,9 +7,26 @@
     @apply text-2xl my-7 leading-snug;
     color: #efcb5a;
   }
+  .title {
+    @apply bubikglitch text-7xl leading-[100px];
+  }
+  .center {
+    @apply flex justify-center items-center;
+  }
 }
 
-/* @import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap'); */
+.text-gradient {
+  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: RubikGlitch;
+  src: url(../public/fonts/rubikglitch/RubikGlitch-Regular.ttf);
+}
 @font-face {
   font-family: Grandstander;
   src: url(../public/fonts/grandstander/Grandstander-clean.ttf);
@@ -25,6 +42,9 @@
 
 .grandstander {
   font-family: Grandstander;
+}
+.bubikglitch {
+  font-family: RubikGlitch;
 }
 
 .pinkchicken {
@@ -121,7 +141,7 @@ body {
   border-radius: 100px;
   margin-right: 1rem;
   /* transform: translateY(-50%); */
-  border: 1px solid whitesmoke
+  border: 1px solid whitesmoke;
 }
 
 .list-roadmap li.active::before {
