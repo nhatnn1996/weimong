@@ -27,7 +27,7 @@ const SlideLeft = ({ isShow, onClose }) => {
       initial={'closed'}
       transition={{ duration: 0.2 }}
       animate={isShow ? 'open' : 'closed'}
-      className=" bg-white py-[3.125rem] px-10 grandstander min-h-screen shadow-md fixed top-0 left-0 z-10 w-[30%]"
+      className=" bg-white w-full py-[3.125rem] px-10 grandstander min-h-screen shadow-md fixed top-0 left-0 z-10 xl:w-[30%]"
     >
       <div className="close w-full flex justify-end">
         <span onClick={onClose}>

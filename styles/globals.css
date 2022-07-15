@@ -15,12 +15,16 @@
   }
 }
 
-.text-gradient {
+.text-gradient-oranger {
   background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
+}
+.bg-gradient-oranger {
+  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
+  border-radius: 18px;
 }
 
 @font-face {

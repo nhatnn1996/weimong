@@ -5,14 +5,14 @@ import SlideLeft from '../slider';
 const Header = () => {
   const [state, setState] = useState(false);
   return (
-    <header className="header flex justify-between py-4 3xl:py-7">
+    <header className="header flex justify-between py-4 xl:py-7">
       <button
-        className="cursor-pointer"
+        className="min-w-[80px]"
         onClick={() => {
           setState(true);
         }}
       >
-        <MenuIcon />
+        <MenuIcon className="cursor-pointer" />
       </button>
       <nav className=" py-10 px-6 justify-center text-xl hidden">
         <ul className="flex-1 flex justify-end gap-24 items-center">
@@ -28,8 +28,8 @@ const Header = () => {
       <div className="w-[15rem] h-[6.75]">
         <Image src="/images/logo.png" className="cursor-pointer" alt="" layout="responsive" height="108" width="241" />
       </div>
-      <button className="invisible">
-        <MenuIcon />
+      <button className="">
+        <div className="bg-gradient-oranger pt-4 pb-3 px-7 text-white hover:shadow-md hover:translate-y-[-2px] duration-200">Login</div>
       </button>
 
       <SlideLeft
