@@ -20,6 +20,11 @@ const variants = {
 
 const SlideLeft = ({ isShow, onClose }) => {
   const router = useRouter();
+  const closeWhenClick = () => {
+    setTimeout(() => {
+      onClose();
+    }, 200);
+  };
 
   return (
     <motion.nav
@@ -40,7 +45,10 @@ const SlideLeft = ({ isShow, onClose }) => {
           return (
             <li className={`mb-6 whitespace-nowrap px-16`} key={index}>
               <Link href={element.href} passHref>
-                <a className={`rounded-2xl border-[2px] flex min-w-10 text-[#ff6d00] text-xl center  pb-3 py-4 ease-in-out duration-300 ${isActive} hover:bg-[#FF9E00] hover:text-white`} >
+                <a
+                  onClick={closeWhenClick}
+                  className={`rounded-2xl border-[2px] flex min-w-10 text-[#ff6d00] text-xl center  pb-3 py-4 ease-in-out duration-300 ${isActive} hover:bg-[#FF9E00] hover:text-white`}
+                >
                   <span className="flex items-center">{element.children}</span>
                 </a>
               </Link>
