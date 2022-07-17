@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 
-const useSlider = ({ length, loop }) => {
+const useSlider = ({ length, loop, duration = 5 }) => {
   const time = useRef();
   const [active, setActive] = useState(0);
   const changeActive = (index) => {
@@ -16,7 +16,7 @@ const useSlider = ({ length, loop }) => {
         state++;
         return state;
       });
-    }, 5000);
+    }, duration * 1000);
   };
 
   useEffect(() => {
