@@ -10,7 +10,6 @@ const slider = [{ component: <Free /> }, { component: <Owned /> }, { component: 
 
 export default function Home() {
   const [active] = useSlider({ length: slider.length, loop: true });
-  console.log(active);
   return (
     <div className="py-10 z-10">
       <div className="flex">

@@ -1,5 +1,5 @@
 import { Discord, Facebook, Instagram } from '@/components/icons';
-export default function Free() {
+export default function Added() {
   return (
     <div className="ml-20 mt-20">
       <div className="title" style={{ lineHeight: '1.2' }}>
