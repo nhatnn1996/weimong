@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function PageThree() {
   return (
     <div className="mt-20">
@@ -13,7 +15,7 @@ export default function PageThree() {
           </p>
         </div>
         <div className="xl:pl-20 mt-5">
-          <img src="/images/sillymong2.png" alt="" />
+          <Image priority placeholder="blur" src="/images/sillymong2.png" layout="responsive" width="100%" height="54.6%" alt="Not found image" />
         </div>
       </div>
     </div>

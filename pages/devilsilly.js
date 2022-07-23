@@ -14,7 +14,7 @@ const slider = [
 ];
 export default function Home() {
   const lengthSlider = slider.length;
-  const [active, setActive] = useSlider({ length: slider.length, loop: true, duration: 10 });
+  const [active, setActive] = useSlider({ length: slider.length, loop: true, duration: 20 });
   const { component, title } = slider[active];
   return (
     <div className="py-10 z-10">
