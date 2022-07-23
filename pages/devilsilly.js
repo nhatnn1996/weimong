@@ -15,10 +15,10 @@ const slider = [
 export default function Home() {
   const lengthSlider = slider.length;
   const [active, setActive] = useSlider({ length: slider.length, loop: true, duration: 10 });
-  const component = slider[active].component;
+  const { component, title } = slider[active];
   return (
     <div className="py-10 z-10">
-      <div className="flex justify-center">
+      <div className="justify-center min-h-[3rem] hidden 2xl:flex">
         {slider.map((element, index) => {
           const clxActive = index === active ? 'text-3xl' : 'text-2xl  text-gray-200';
           return (
@@ -28,16 +28,18 @@ export default function Home() {
           );
         })}
       </div>
+      <div className="2xl:hidden text-center text-2xl">{title}</div>
       <div className="relative">
         <motion.div key={active} variants={variants} initial="hidden" animate="enter" exit="exit" transition={{ duration: 1, type: 'linear' }}>
           {component}
         </motion.div>
-        <div className="bottom-0 left-0 absolute">
-          <b className="text-5xl">0{active + 1}</b> <span className="text-4xl text-gray-300">/0{lengthSlider}</span>
+        <div className="2xl:bottom-0 bottom-4 2xl:left-0 left-4 fixed 2xl:absolute">
+          <b className=" text-3xl xl:text-5xl">0{active + 1}</b> <span className="text-2xl 2xl:text-4xl text-gray-300">/0{lengthSlider}</span>
         </div>
-        <div className="top-[110%] right-[20%] absolute flex">
+        <div className="bottom-4  xl:top-[110%] right-[20%] fixed 2xl:absolute flex">
           {slider.map((element, index) => {
-            const clxActive = index === active ? 'border-[#FF7A00] border-[2px] w-[3rem]' : 'w-[2.5rem] bg-gray-200 border-gray-200 w-[4rem]';
+            const clxActive =
+              index === active ? 'border-[#FF7A00] bg-[#FF7A00] border-[2px] w-[3rem]' : 'w-[2.7rem] bg-gray-200 border-gray-200 w-[4rem]';
             return (
               <div
                 key={index}

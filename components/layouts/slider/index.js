@@ -7,7 +7,7 @@ import { AlienIcon, CloseIcon } from '@/components/icons';
 const menu = [
   { children: 'Home', href: '/' },
   { children: 'Vision', href: '/vison' },
-  { children: 'Weimong-meta', href: '/weimong-meta' },
+  { children: 'Devilsilly Meta', href: '/devilsilly' },
   { children: 'Roadmap', href: '/roadmap' },
   { children: 'Technology', href: '/technology' },
   { children: 'Partner', href: '/partner' }
