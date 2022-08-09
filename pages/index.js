@@ -24,15 +24,15 @@ export default function Home() {
           <div className="bg-white p-2 xl:flex w-full xl:w-fit">
             <div className="py-8 xl:py-2 xl:px-6  xl:border-r-[1px] xl:border-b-[0px] border-b-[1px]  center flex-col">
               <div className="text-[#FF7700] text-4xl xl:text-3xl drop-shadow-md	">3.208.863</div>
-              <p className="mt-4 text-xl text-[#828282]">Registered Users</p>
+              <p className="mt-4 text-xl-s text-[#828282]">Registered Users</p>
             </div>
             <div className=" py-8 xl:py-2 xl:px-6 xl:border-r-[1px] xl:border-b-[0px] border-b-[1px]  flex-col center">
               <div className="text-[#FF7700] text-4xl xl:text-3xl drop-shadow-md	">$298.568.909</div>
-              <p className="mt-4 text-xl text-[#828282]">NFT Trade Volume</p>
+              <p className="mt-4 text-xl-s text-[#828282]">NFT Trade Volume</p>
             </div>
             <div className="py-8 xl:py-2 xl:px-6 flex-col center">
               <div className="text-[#FF7700] text-4xl xl:text-3xl drop-shadow-md">$298.568.909</div>
-              <p className="mt-4 text-xl text-[#828282]">NFTs Minted</p>
+              <p className="mt-4 text-xl-s text-[#828282]">NFTs Minted</p>
             </div>
           </div>
           <div className="max-w-[59rem] w-full px-[2.125rem] pb-[1.688rem] hidden xl:block">

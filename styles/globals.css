@@ -1,31 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Source+Sans+Pro:ital@1&display=swap');
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
-@layer components {
-  .menu-active {
-    @apply text-2xl my-7 leading-snug;
-    color: #efcb5a;
-  }
-  .title {
-    @apply bubikglitch text-7xl leading-[100px];
-  }
-  .center {
-    @apply flex justify-center items-center;
-  }
-}
-
-.text-gradient-oranger {
-  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-}
-.bg-gradient-oranger {
-  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
-  border-radius: 18px;
-}
 
 @font-face {
   font-family: RubikGlitch;
@@ -40,15 +16,71 @@
   src: url(../public/fonts/pinkchicken/PinkChicken-Regular.ttf);
 }
 
+.bubikglitch {
+  font-family: RubikGlitch;
+}
+
+@layer components {
+  .menu-active {
+    @apply text-2xl-s my-7 leading-snug;
+    color: #efcb5a;
+  }
+  .title {
+    @apply bubikglitch text-7xl leading-[100px];
+  }
+  .center {
+    @apply flex justify-center items-center;
+  }
+  .text-xl-s {
+    @apply text-xl;
+    font-family: RubikGlitch;
+  }
+  .text-3xl-s {
+    @apply text-3xl;
+    font-family: RubikGlitch;
+  }
+  .text-2xl-s {
+    @apply text-2xl bubikglitch;
+    font-family: RubikGlitch;
+  }
+
+  .heading-1 {
+  }
+  .heading-2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .heading-6 {
+    @apply font-semibold;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .body-regular {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+  }
+}
+
+.text-gradient-oranger {
+  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.bg-gradient-oranger {
+  background: linear-gradient(180deg, #ff9e00 0%, #ff6d00 100%);
+  border-radius: 18px;
+}
+
 .text-gray {
   color: #fafafa;
 }
 
 .grandstander {
   font-family: Grandstander;
-}
-.bubikglitch {
-  font-family: RubikGlitch;
 }
 
 .pinkchicken {
@@ -63,18 +95,45 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Grandstander, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: Grandstander, Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, */
+  /* sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
 }
 
 @media only screen and (max-width: 1700px) {
-  html,
-  body {
-    font-size: 12px !important;
+}
+@media only screen and (min-width: 1366px) {
+  .heading-2 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .heading-2 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .heading-2 {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+  }
+  .body-regular {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
   }
 }
 

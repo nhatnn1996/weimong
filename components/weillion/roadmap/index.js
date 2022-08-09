@@ -13,10 +13,10 @@ const Roadmap = () => {
               </div>
               <div className="w-full h-[1px] bg-slate-50" />
             </div>
-            <div className="text-2xl font-bold">{element.title}</div>
+            <div className="text-2xl-s font-bold">{element.title}</div>
             <div className="text-sm font-light mt-1">{element.time}</div>
             {element.list_content.map((text) => (
-              <div key={text} className="text-xl mt-6">
+              <div key={text} className="text-xl-s mt-6">
                 {text}
               </div>
             ))}

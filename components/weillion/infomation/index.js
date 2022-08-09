@@ -27,7 +27,7 @@ const Infomation = () => {
           <div key={index} className="text-white py-8">
             <Image layout="responsive" objectFit="contain" src={element.image} alt="" width="100%" height="50%" />
             <div className="text-3xl my-2 font-bold ">{element.title}</div>
-            <div className="text-2xl">{element.description}</div>
+            <div className="text-2xl-s">{element.description}</div>
           </div>
         ))}
       </div>

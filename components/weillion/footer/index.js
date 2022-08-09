@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row text-center md:text-left">
           {links.map((element) => (
             <Link href={element.href} key={element.href}>
-              <a className="text-xl md:border-r-[1px] px-2 font-bold mt-4"> {element.label} </a>
+              <a className="text-xl-s md:border-r-[1px] px-2 font-bold mt-4"> {element.label} </a>
             </Link>
           ))}
         </div>

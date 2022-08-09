@@ -16,7 +16,7 @@ export default function Home() {
           <div className="flex justify-end w-full">
             <div className="w-[95%]">
               <TitleSpecial>Phase 0: DEC-FEB 2022</TitleSpecial>
-              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl 2xl:text-2xl list-roadmap">
+              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl-s 2xl:text-2xl-s list-roadmap">
                 <li className="mb-4 active">WEIMONG Character Concept Art</li>
                 <li className="mb-4 active">WEIMONG Game concepts</li>
                 <li className="mb-4 active">Website V1</li>
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="flex justify-start w-full">
             <div className="w-[95%]">
               <TitleSpecial>Owned by the players</TitleSpecial>
-              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl 2xl:text-2xl list-roadmap">
+              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl-s 2xl:text-2xl-s list-roadmap">
                 <li className="mb-4 active">WEIMONG Character Concept Art</li>
                 <li className="mb-4">Whitelist WEI NFT Season 1 Start</li>
                 <li className="mb-4">Roadmap V2 Announcement</li>
@@ -76,7 +76,7 @@ export default function Home() {
           <div className="flex justify-end w-full">
             <div className="w-[95%]">
               <TitleSpecial>Phase 2: Q2-2022</TitleSpecial>
-              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#f6e9e9]  max-w-[39.843rem] text-xl 2xl:text-2xl list-roadmap">
+              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#f6e9e9]  max-w-[39.843rem] text-xl-s 2xl:text-2xl-s list-roadmap">
                 <li className="mb-4">Whitelist for Second NFT Offering</li>
                 <li className="mb-4">Second NFT Offering: Pancha Triad NFT Public Mint</li>
                 <li className="mb-4">Weilion Token IEO: $WEI</li>
@@ -89,7 +89,7 @@ export default function Home() {
           <div className="flex justify-start w-full">
             <div className="w-[95%]">
               <TitleSpecial>Owned by the players</TitleSpecial>
-              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl 2xl:text-2xl list-roadmap">
+              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#bbbaba]  max-w-[39.843rem] text-xl-s 2xl:text-2xl-s list-roadmap">
                 <li className="mb-4">Core Gameplay Discovery</li>
                 <li className="mb-4">Gameplay Infomation</li>
                 <li className="mb-4">Gameplay Mining</li>
@@ -123,7 +123,7 @@ export default function Home() {
           <div className="flex justify-end w-full">
             <div className="w-[95%]">
               <TitleSpecial>Phase 2: Q2-2022</TitleSpecial>
-              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#f6e9e9]  max-w-[39.843rem] text-xl 2xl:text-2xl list-roadmap">
+              <ul className="mt-5 md:mt-8 px-10 leading-6 pinkchicken text-[#f6e9e9]  max-w-[39.843rem] text-xl-s 2xl:text-2xl-s list-roadmap">
                 <li className="mb-4">Whitelist for Second NFT Offering</li>
                 <li className="mb-4">Second NFT Offering: Pancha Triad NFT Public Mint</li>
                 <li className="mb-4">Weilion Token IEO: $WEI</li>

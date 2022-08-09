@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^1.0.6",
     "animate.css": "^4.1.1",
     "framer-motion": "^6.2.8",
     "next": "12.0.7",

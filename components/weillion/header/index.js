@@ -26,12 +26,12 @@ const Header = () => {
 
   return (
     <header className="header bg-black text-white sticky top-0 left-0 z-50">
-      <nav className="py-8 px-4justify-center text-xl hidden md:flex">
+      <nav className="py-8 px-4justify-center text-xl-s hidden md:flex">
         <ul className="flex-1 flex justify-end gap-24 items-center">
-          <li className="text-2xl">
+          <li className="text-2xl-s">
             <a href="#">Weimong Miner</a>
           </li>
-          <li className="text-2xl">
+          <li className="text-2xl-s">
             <a href="#">Whitepaper</a>
           </li>
         </ul>
@@ -39,15 +39,15 @@ const Header = () => {
           <Image src="/images/logo.svg" className="cursor-pointer" alt="" layout="fill" height="10rem" width="10rem" />
         </div>
         <ul className="flex-1 flex justify-start gap-24 items-center">
-          <li className="text-2xl">
+          <li className="text-2xl-s">
             <a href="#">Markeplace</a>
           </li>
-          <li className="text-2xl">
+          <li className="text-2xl-s">
             <button className="rounded-full shadow-md px-4py-1 bg-blue-500 text-white">Login</button>
           </li>
         </ul>
       </nav>
-      <nav className="py-1 px-4bg-black  justify-between text-xl flex md:hidden items-center z-50">
+      <nav className="py-1 px-4bg-black  justify-between text-xl-s flex md:hidden items-center z-50">
         <div className="w-24">
           <Image
             src="/images/logo.svg"
