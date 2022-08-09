@@ -5,7 +5,7 @@ import SlideLeft from '../slider';
 const Header = () => {
   const [state, setState] = useState(false);
   return (
-    <header className="header flex justify-between py-2 xl:py-4 2xl:py-7">
+    <header className="header flex justify-between py-4 2xl:py-7">
       <button
         className="xl:min-w-[80px]"
         onClick={() => {
