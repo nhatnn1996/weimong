@@ -28,9 +28,10 @@ function MyApp({ Component, pageProps }) {
           referrerPolicy="no-referrer"
         />
       </Head>
-      <div className="px-8 py xl:pb-10 xl:px-20 min-h-[100vh] flex flex-col">
+      <div className="px-8 xl:pb-10 xl:px-20">
         <Header />
-
+      </div>
+      <div className={'min-h-[100vh] flex flex-col' + (Component.layout === 'full' ? '' : 'px-8 xl:pb-10 xl:px-20')}>
         <motion.main
           className="flex-1"
           key={router.pathname}
