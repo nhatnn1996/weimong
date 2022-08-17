@@ -211,3 +211,26 @@ body {
   background-color: #6aff08;
   border: none;
 }
+.roadmap-bg-linear {
+  background: linear-gradient(106.68deg, rgba(204, 56, 208, 0.8) 3.29%, rgba(255, 109, 0, 0.4) 81.36%);
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.1);
+  /* filter: blur(4px); */
+  border-radius: 20px;
+  padding: 20px 30px;
+  margin-top: 16px;
+  /* transform: matrix(1, 0, 0, -1, 0, 0); */
+}
+.roadmap-bg-linear span.number {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 1;
+  display: flex;
+  justify-items: center;
+}
+.roadmap-bg-linear span {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
