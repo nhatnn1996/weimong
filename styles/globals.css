@@ -5,15 +5,15 @@
 
 @font-face {
   font-family: RubikGlitch;
-  src: url(../assets/fonts/rubikglitch/RubikGlitch-Regular.ttf);
+  src: url(fonts/rubikglitch/RubikGlitch-Regular.ttf);
 }
 @font-face {
   font-family: Grandstander;
-  src: url(../assets/fonts/grandstander/Grandstander-clean.ttf);
+  src: url(fonts/grandstander/Grandstander-clean.ttf);
 }
 @font-face {
   font-family: Pinkchicken;
-  src: url(../assets/fonts/pinkchicken/PinkChicken-Regular.ttf);
+  src: url(fonts/pinkchicken/PinkChicken-Regular.ttf);
 }
 
 .bubikglitch {
