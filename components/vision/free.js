@@ -1,8 +1,8 @@
 import { Discord, Facebook, Instagram } from '@/components/icons';
 export default function Free() {
   return (
-    <div className="ml-20 mt-20">
-      <div className="title" style={{ lineHeight: '1.2' }}>
+    <div className="xl:ml-20 xl:mt-20 mt-10">
+      <div className="title text-4xl xl:text-5xl" style={{ lineHeight: '1.2' }}>
         Free-to-Play, <br /> Play-to-Earn
       </div>
       <p className="mt-6 leading-10">

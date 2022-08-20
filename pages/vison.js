@@ -9,14 +9,14 @@ import useSlider from 'hooks/slide';
 const slider = [{ component: <Free /> }, { component: <Owned /> }, { component: <Added /> }];
 
 export default function Home() {
-  const [active] = useSlider({ length: slider.length, loop: true });
+  const [active] = useSlider({ length: slider.length, loop: false, duration: 1000000 });
   return (
     <div className="py-10 z-10">
-      <div className="flex">
-        <div className="w-[40%]">
+      <div className="xl:flex">
+        <div className="w-full xl:w-[40%]">
           <LeftVision />
         </div>
-        <div>
+        <div className="">
           {slider.map((element, index) => {
             if (active === index)
               return (

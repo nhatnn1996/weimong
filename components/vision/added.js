@@ -1,8 +1,8 @@
 import { Discord, Facebook, Instagram } from '@/components/icons';
 export default function Added() {
   return (
-    <div className="ml-20 mt-20">
-      <div className="title" style={{ lineHeight: '1.2' }}>
+    <div className="xl:ml-20 xl:mt-20 mt-10">
+      <div className="title text-4xl xl:text-5xl" style={{ lineHeight: '1.2' }}>
         Added-value for NFTs
       </div>
       <p className="mt-6 leading-10 pr-3">
