@@ -9,16 +9,14 @@ const Tabs = ({ active, setActive }) => {
           className={'heading-6 border-b-[3px] cursor-pointer pb-3 ' + (active === 0 ? ' border-[#FF9E00]' : 'border-white')}
           onClick={() => {
             setActive(0);
-          }}
-        >
+          }}>
           Horror Lands
         </div>
         <div
           className={'heading-6 border-b-[3px] cursor-pointer ml-10 ' + (active === 1 ? ' border-[#FF9E00]' : 'border-white')}
           onClick={() => {
             setActive(1);
-          }}
-        >
+          }}>
           Devil’s House
         </div>
       </div>
