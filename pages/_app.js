@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
       <div className="px-8 xl:pb-10 2xl:px-20">
         <Header />
       </div>
-      <div className={'min-h-[100vh] flex flex-col' + (Component.layout === 'full' ? '' : ' px-8 xl:pb-10 2xl:px-20')}>
+      <div className={'min-h-[calc(100vh-164px)] flex flex-col' + (Component.layout === 'full' ? '' : ' px-8 2xl:px-20')}>
         <motion.main
           className="flex-1"
           key={router.pathname}
