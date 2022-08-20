@@ -43,6 +43,7 @@ function MyApp({ Component, pageProps }) {
         >
           <Component {...pageProps} />
         </motion.main>
+        {/* <div className="fixed bottom-2 right-6 hidden xl:block">Copyright © 2022 DevilSilly. All rights reserved.</div> */}
       </div>
     </>
   );

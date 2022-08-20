@@ -9,8 +9,9 @@ const menu = [
   { children: 'Vision', href: '/vison' },
   { children: 'Devilsilly Meta', href: '/devilsilly' },
   { children: 'Roadmap', href: '/roadmap' },
-  { children: 'Technology', href: '/technology' },
-  { children: 'Partner', href: '/partner' }
+  { children: 'Team', href: '/team' }
+  // { children: 'Technology', href: '/technology' },
+  // { children: 'Partner', href: '/partner' }
 ];
 
 const variants = {
